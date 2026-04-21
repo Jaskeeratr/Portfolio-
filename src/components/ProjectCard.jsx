@@ -17,6 +17,18 @@ export default function ProjectCard({ project }) {
           <Link className="btn btn-secondary project-link" to={`/projects/${project.slug}`}>
             View Project Details
           </Link>
+          {project.demoUrl ? (
+            <a
+              className="btn btn-primary project-link"
+              href={project.demoUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+          ) : (
+            <span className="repo-coming-soon">Live demo coming soon</span>
+          )}
           {project.repoUrl ? (
             <a
               className="btn btn-primary project-link"
@@ -24,11 +36,21 @@ export default function ProjectCard({ project }) {
               target="_blank"
               rel="noreferrer"
             >
-              GitHub Repo
+              View Repository
             </a>
           ) : (
-            <span className="repo-coming-soon">GitHub link coming soon</span>
+            <span className="repo-coming-soon">Repository link coming soon</span>
           )}
+          {project.caseStudyPdf ? (
+            <a
+              className="btn btn-secondary project-link"
+              href={project.caseStudyPdf}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Case Study PDF
+            </a>
+          ) : null}
         </div>
       </div>
     </article>

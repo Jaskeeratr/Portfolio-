@@ -1,13 +1,21 @@
-﻿export const projects = [
+export const projects = [
   {
     slug: "gapcheck",
     name: "GapCheck",
     tagline: "AI-powered internship matching and resume gap analysis platform",
     stack: ["React", "FastAPI", "PostgreSQL", "Claude API", "Apache Airflow"],
     image: "/images/gapcheck.svg",
+    architectureDiagram: "/images/arch-gapcheck.svg",
     repoUrl: "https://github.com/Jaskeeratr/gapcheck",
+    demoUrl: "https://gapcheck-1.onrender.com",
+    caseStudyPdf: "/case-studies/gapcheck-case-study.pdf",
     summary:
       "Built and deployed a full-stack platform that aggregates internship listings and evaluates candidate-job fit using weighted scoring and LLM-assisted reasoning.",
+    resultsSnapshot: [
+      { value: "100+", label: "Listings Aggregated Daily", note: "Across Calgary internship sources" },
+      { value: "5", label: "Scoring Dimensions", note: "Skills, experience, education, projects, domain" },
+      { value: "3", label: "Verdict Classes", note: "Strong match, close miss, significant gap" }
+    ],
     highlights: [
       "Aggregates 100+ Calgary tech internships daily from LinkedIn and Indeed",
       "Runs scheduled Airflow pipelines with deduplication and cleanup",
@@ -25,6 +33,11 @@
       "Airflow DAG for scraping, deduplication, and scheduled refresh",
       "Claude API integration for resume parsing and tailored suggestions"
     ],
+    challengesTradeoffs: [
+      "Challenge: Resume text quality varied widely. Change: Added normalization and schema-guarded parsing before scoring.",
+      "Challenge: Duplicate postings across sources. Change: Implemented deterministic deduplication keys in ingestion.",
+      "Tradeoff: LLM reasoning quality vs cost. Decision: Restricted model calls to key analysis stages with structured prompts."
+    ],
     outcomes: [
       "Reduced internship search friction with one centralized ranking workflow",
       "Delivered transparent score breakdowns that users can act on immediately",
@@ -37,9 +50,17 @@
     tagline: "Automated ETL and analytics stack for large-scale production datasets",
     stack: ["Python", "Apache Airflow", "PostgreSQL", "Power BI", "Docker"],
     image: "/images/alberta-pipeline.svg",
+    architectureDiagram: "/images/arch-alberta.svg",
     repoUrl: "https://github.com/Jaskeeratr/alberta-energy-pipeline",
+    demoUrl: null,
+    caseStudyPdf: "/case-studies/alberta-energy-pipeline-case-study.pdf",
     summary:
       "Engineered an end-to-end ETL pipeline for Alberta Energy Regulator production data with robust validation, indexing, and dashboarding.",
+    resultsSnapshot: [
+      { value: "500K+", label: "Rows Per Run", note: "Automated monthly ingestion at scale" },
+      { value: "33K", label: "Invalid Rows Removed", note: "Validation and cleanup in each cycle" },
+      { value: "70%", label: "Query Speed Gain", note: "420ms to 120ms with targeted indexes" }
+    ],
     highlights: [
       "Processes 500K+ records per pipeline run",
       "Removes 33K invalid records and flags 6% data quality issues each cycle",
@@ -57,6 +78,11 @@
       "Targeted B-tree indexes on key dimensions for analytics speed",
       "Power BI dashboard layer for operator and field-level trend analysis"
     ],
+    challengesTradeoffs: [
+      "Challenge: Source data inconsistency across fields. Change: Added schema checks and quality scoring before load.",
+      "Challenge: Slow analytical grouping queries. Change: Benchmarked and applied B-tree indexes on high-selectivity columns.",
+      "Tradeoff: Full historical reload vs incremental updates. Decision: Used scheduled batch runs for reliability and auditability."
+    ],
     outcomes: [
       "Created a repeatable analytics pipeline with strong observability",
       "Improved trust in downstream reporting through automated validation",
@@ -69,9 +95,17 @@
     tagline: "Personalized full-stack nutrition app with scalable meal tracking",
     stack: ["React", "Node.js", "PostgreSQL"],
     image: "/images/macro-finder.svg",
-    repoUrl: null,
+    architectureDiagram: "/images/arch-macro.svg",
+    repoUrl: "https://csgit.ucalgary.ca/jashan.bhinder/seng513-202601-pg-17",
+    demoUrl: null,
+    caseStudyPdf: "/case-studies/macro-finder-case-study.pdf",
     summary:
       "Developed a responsive nutrition platform that calculates personalized macro targets based on goals, activity, and dietary preferences.",
+    resultsSnapshot: [
+      { value: "3", label: "Core Inputs", note: "Goals, activity level, dietary preference" },
+      { value: "1", label: "Unified Tracking Flow", note: "Daily logs and historical summaries" },
+      { value: "100%", label: "Responsive UI", note: "Designed for desktop and mobile usage" }
+    ],
     highlights: [
       "Computes user-specific macro distributions with edge-case handling",
       "Supports meal logging and historical tracking workflows",
@@ -88,6 +122,11 @@
       "PostgreSQL schema for users, meals, macro snapshots, and history",
       "Reusable query patterns for aggregate views over time"
     ],
+    challengesTradeoffs: [
+      "Challenge: Personalized recommendations across varied profiles. Change: Added edge-case handling for goals and activity combinations.",
+      "Challenge: Keeping meal history performant. Change: Normalized schema and optimized aggregate query paths.",
+      "Tradeoff: Rich UX interactions vs implementation simplicity. Decision: Prioritized clarity and speed over heavy UI complexity."
+    ],
     outcomes: [
       "Delivered a practical nutrition workflow instead of one-off calculations",
       "Created a data model ready for future recommendation features",
@@ -100,9 +139,17 @@
     tagline: "End-to-end ML pipeline for high-variance sports outcomes",
     stack: ["Python", "Scikit-learn", "SQL"],
     image: "/images/epl-predictor.svg",
-    repoUrl: null,
+    architectureDiagram: "/images/arch-epl.svg",
+    repoUrl: "https://github.com/Jaskeeratr/Premier-predictor",
+    demoUrl: null,
+    caseStudyPdf: "/case-studies/premier-league-predictor-case-study.pdf",
     summary:
       "Built a machine learning pipeline that predicts Premier League match outcomes using engineered historical features and optimized SQL extraction.",
+    resultsSnapshot: [
+      { value: "66.8%", label: "Model Accuracy", note: "On noisy real-world outcome data" },
+      { value: "+17%", label: "Lift vs Baseline", note: "Outperformed naive predictor" },
+      { value: "20+", label: "Engineered Features", note: "Performance and match-context features" }
+    ],
     highlights: [
       "Achieved 66.8% prediction accuracy",
       "Outperformed naive baseline by 17%",
@@ -118,6 +165,11 @@
       "Python preprocessing and training workflow with reproducible experiments",
       "Scikit-learn modeling and evaluation pipeline",
       "Performance tracking against naive and tuned benchmark models"
+    ],
+    challengesTradeoffs: [
+      "Challenge: High variance and unpredictable match dynamics. Change: Expanded feature set and benchmarked against baseline continuously.",
+      "Challenge: Feature extraction cost on larger sets. Change: Optimized SQL selection and reduced query runtime by 22%.",
+      "Tradeoff: Model complexity vs interpretability. Decision: Kept an interpretable pipeline while improving lift."
     ],
     outcomes: [
       "Established measurable improvement in a noisy prediction domain",

@@ -1,5 +1,6 @@
 ﻿import { Route, Routes } from "react-router-dom";
 import SiteLayout from "./components/SiteLayout";
+import AnalyticsTracker from "./components/AnalyticsTracker";
 import ContactPage from "./pages/ContactPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import HomePage from "./pages/HomePage";
@@ -12,6 +13,7 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
+      <AnalyticsTracker />
       <Routes>
         <Route element={<SiteLayout />}>
           <Route index element={<HomePage />} />

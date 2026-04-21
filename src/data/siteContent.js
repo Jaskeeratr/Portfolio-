@@ -1,8 +1,23 @@
-﻿export const statCards = [
+export const statCards = [
   { value: 500, suffix: "K+", label: "Records processed per ETL run" },
   { value: 30, suffix: "%", label: "Page-load improvement shipped" },
   { value: 1000, suffix: "+", label: "AI outputs evaluated" },
   { value: 66.8, suffix: "%", label: "Model accuracy", decimals: 1 }
+];
+
+export const recruiterHighlights = [
+  {
+    title: "Fast Shipping",
+    detail: "Delivered multiple production systems across internships and project teams."
+  },
+  {
+    title: "Data Reliability",
+    detail: "Built validation-first pipelines with auditability and measurable quality controls."
+  },
+  {
+    title: "Product Thinking",
+    detail: "Designs technical solutions with user value, clarity, and real-world constraints."
+  }
 ];
 
 export const skillGroups = [

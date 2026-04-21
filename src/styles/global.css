@@ -39,6 +39,19 @@ body {
   line-height: 1.6;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(133, 173, 204, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(133, 173, 204, 0.045) 1px, transparent 1px);
+  background-size: 38px 38px;
+  mask-image: radial-gradient(circle at center, black 24%, transparent 90%);
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -90,6 +103,25 @@ a {
   background: #ff9f5a;
   right: -180px;
   bottom: -160px;
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 70;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.scroll-progress span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #1ec8a5, #23b2ff, #ff9f5a);
+  box-shadow: 0 0 14px rgba(35, 178, 255, 0.6);
+  transition: width 0.08s linear;
 }
 
 .site-header {
@@ -153,6 +185,11 @@ a {
   border: 1px solid rgba(191, 228, 252, 0.34);
   padding: 0.42rem 0.8rem;
   color: #e4f4ff;
+}
+
+.nav-link-alt {
+  border-color: rgba(35, 178, 255, 0.48);
+  background: rgba(11, 33, 52, 0.55);
 }
 
 .menu-toggle {
@@ -287,6 +324,27 @@ h2 {
   transform: none;
 }
 
+.availability-banner {
+  margin-top: 1rem;
+  border: 1px solid rgba(30, 200, 165, 0.32);
+  background: rgba(8, 29, 42, 0.72);
+  border-radius: 14px;
+  padding: 0.85rem 0.9rem;
+}
+
+.availability-banner p {
+  margin: 0;
+  color: #d7ebf9;
+  font-size: 0.92rem;
+}
+
+.availability-actions {
+  margin-top: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
 .btn-primary {
   color: #00131a;
   background: linear-gradient(110deg, var(--teal), #72e2f8);
@@ -377,6 +435,34 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.recruiter-section {
+  padding-top: 2.2rem;
+}
+
+.recruiter-grid {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.recruiter-card {
+  background: rgba(10, 29, 44, 0.82);
+  border: 1px solid rgba(177, 216, 244, 0.2);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.recruiter-card h3 {
+  font-size: 1.05rem;
+}
+
+.recruiter-card p {
+  margin: 0.55rem 0 0;
+  color: #cce3f6;
 }
 
 .stat-card,
@@ -475,12 +561,27 @@ h2 {
 .project-card {
   overflow: hidden;
   transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  position: relative;
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 2px;
+  background: linear-gradient(90deg, #1ec8a5, #23b2ff);
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
   border-color: rgba(117, 220, 242, 0.58);
   box-shadow: 0 20px 40px rgba(2, 11, 20, 0.4);
+}
+
+.project-card:hover::after {
+  opacity: 1;
 }
 
 .project-card > img {
@@ -644,6 +745,50 @@ h2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.results-snapshot {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.snapshot-card {
+  background: rgba(10, 29, 44, 0.86);
+  border: 1px solid rgba(184, 220, 246, 0.24);
+  border-radius: var(--radius-md);
+  padding: 0.95rem;
+}
+
+.snapshot-card h3 {
+  font-size: 0.96rem;
+  color: #e4f4ff;
+}
+
+.snapshot-value {
+  margin: 0 0 0.3rem;
+  font-family: "Sora", "Segoe UI", sans-serif;
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #7ce7cf;
+}
+
+.snapshot-card p {
+  margin: 0.25rem 0 0;
+  color: #bed8ec;
+  font-size: 0.86rem;
+}
+
+.architecture-diagram {
+  margin-top: 0.8rem;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(184, 220, 245, 0.28);
+}
+
+.top-actions {
+  margin-top: 1rem;
+}
+
 .detail-card-wide {
   grid-column: span 2;
 }
@@ -741,12 +886,29 @@ h2 {
 
 .footer-wrap {
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .footer-wrap p {
   margin: 0;
   color: var(--text-muted);
+}
+
+.footer-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.footer-links a {
+  font-size: 0.9rem;
+  color: #d4e8f8;
+  border: 1px solid rgba(190, 224, 248, 0.28);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
 }
 
 .reveal {
@@ -782,7 +944,9 @@ h2 {
   .stats-grid,
   .project-detail-grid,
   .contact-grid,
-  .form-grid {
+  .form-grid,
+  .results-snapshot,
+  .recruiter-grid {
     grid-template-columns: 1fr;
   }
 

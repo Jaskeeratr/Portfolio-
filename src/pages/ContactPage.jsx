@@ -107,6 +107,14 @@ export default function ContactPage() {
               </p>
             </article>
             <article className="contact-item">
+              <h3>LinkedIn</h3>
+              <p>
+                <a href="https://www.linkedin.com/in/jaskeeratr22/" target="_blank" rel="noreferrer">
+                  linkedin.com/in/jaskeeratr22
+                </a>
+              </p>
+            </article>
+            <article className="contact-item">
               <h3>GitHub</h3>
               <p>
                 <a href="https://github.com/Jaskeeratr" target="_blank" rel="noreferrer">

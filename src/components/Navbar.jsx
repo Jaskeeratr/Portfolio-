@@ -65,6 +65,15 @@ export default function Navbar() {
           >
             Resume
           </a>
+          <a
+            className="nav-cta nav-link-alt"
+            href="https://www.linkedin.com/in/jaskeeratr22/"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setOpen(false)}
+          >
+            LinkedIn
+          </a>
         </nav>
       </div>
     </header>

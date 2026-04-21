@@ -31,10 +31,41 @@ export default function ProjectDetailPage() {
           <h1>{project.name}</h1>
           <p>{project.tagline}</p>
           <p className="stack stack-block">{project.stack.join(" | ")}</p>
+          <div className="detail-actions top-actions">
+            {project.demoUrl ? (
+              <a className="btn btn-primary" href={project.demoUrl} target="_blank" rel="noreferrer">
+                Live Demo
+              </a>
+            ) : (
+              <span className="repo-coming-soon">Live demo link will be added soon</span>
+            )}
+            {project.repoUrl ? (
+              <a className="btn btn-secondary" href={project.repoUrl} target="_blank" rel="noreferrer">
+                View Repository
+              </a>
+            ) : (
+              <span className="repo-coming-soon">Repository link will be added soon</span>
+            )}
+            {project.caseStudyPdf ? (
+              <a className="btn btn-secondary" href={project.caseStudyPdf} target="_blank" rel="noreferrer">
+                Case Study PDF
+              </a>
+            ) : null}
+          </div>
         </Reveal>
 
         <Reveal>
           <img className="project-hero" src={project.image} alt={`${project.name} interface illustration`} />
+        </Reveal>
+
+        <Reveal className="results-snapshot">
+          {project.resultsSnapshot.map((item) => (
+            <article key={item.label} className="snapshot-card">
+              <p className="snapshot-value">{item.value}</p>
+              <h3>{item.label}</h3>
+              <p>{item.note}</p>
+            </article>
+          ))}
         </Reveal>
 
         <div className="project-detail-grid">
@@ -63,9 +94,28 @@ export default function ProjectDetailPage() {
           </Reveal>
 
           <Reveal className="detail-card detail-card-wide">
+            <h2>Architecture Flow</h2>
+            <img
+              className="architecture-diagram"
+              src={project.architectureDiagram}
+              alt={`${project.name} architecture diagram`}
+              loading="lazy"
+            />
+          </Reveal>
+
+          <Reveal className="detail-card detail-card-wide">
             <h2>Key Outcomes</h2>
             <ul>
               {project.outcomes.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </Reveal>
+
+          <Reveal className="detail-card detail-card-wide">
+            <h2>Challenges + Tradeoffs</h2>
+            <ul>
+              {project.challengesTradeoffs.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
@@ -82,13 +132,11 @@ export default function ProjectDetailPage() {
               <Link className="btn btn-secondary" to="/projects">
                 Back to Projects
               </Link>
-              {project.repoUrl ? (
-                <a className="btn btn-primary" href={project.repoUrl} target="_blank" rel="noreferrer">
-                  GitHub Repository
+              {project.caseStudyPdf ? (
+                <a className="btn btn-secondary" href={project.caseStudyPdf} target="_blank" rel="noreferrer">
+                  Case Study PDF
                 </a>
-              ) : (
-                <span className="repo-coming-soon">Repository link will be added soon</span>
-              )}
+              ) : null}
               <a className="btn btn-primary" href="/resume/Jaskeerat-Rai-Resume.pdf" target="_blank" rel="noreferrer">
                 Resume
               </a>

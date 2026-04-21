@@ -4,7 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 import Reveal from "../components/Reveal";
 import StatCard from "../components/StatCard";
 import { projects } from "../data/projects";
-import { skillGroups, statCards } from "../data/siteContent";
+import { recruiterHighlights, skillGroups, statCards } from "../data/siteContent";
 
 const rotatingRoles = [
   "Data Engineering",
@@ -53,6 +53,24 @@ export default function HomePage() {
                 View Resume
               </a>
             </div>
+            <div className="availability-banner">
+              <p>
+                <strong>Available for Summer 2026 Co-op</strong>
+              </p>
+              <div className="availability-actions">
+                <a className="btn btn-primary" href="mailto:jaskeerat.rai@ucalgary.ca">
+                  Email Me
+                </a>
+                <a
+                  className="btn btn-secondary"
+                  href="https://www.linkedin.com/in/jaskeeratr22/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
             <ul className="quick-facts">
               <li>Calgary, AB</li>
               <li>
@@ -60,6 +78,11 @@ export default function HomePage() {
               </li>
               <li>
                 <a href="tel:+18257351377">825-735-1377</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jaskeeratr22/" target="_blank" rel="noreferrer">
+                  LinkedIn Profile
+                </a>
               </li>
             </ul>
           </Reveal>
@@ -88,6 +111,25 @@ export default function HomePage() {
               <StatCard {...card} />
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      <section className="section recruiter-section">
+        <div className="container">
+          <Reveal className="section-head">
+            <p className="eyebrow">Recruiter Highlights</p>
+            <h2>Why teams trust me with real production work.</h2>
+          </Reveal>
+          <div className="recruiter-grid">
+            {recruiterHighlights.map((item) => (
+              <Reveal key={item.title}>
+                <article className="recruiter-card">
+                  <h3>{item.title}</h3>
+                  <p>{item.detail}</p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 

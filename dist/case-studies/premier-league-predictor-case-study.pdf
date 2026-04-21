@@ -1,0 +1,87 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 3173 >>
+stream
+BT /F1 20 Tf 1 0 0 1 72 760 Tm (Premier League Match Predictor - Project Case Study) Tj ET
+BT /F1 12 Tf 1 0 0 1 72 735 Tm (End-to-end ML pipeline for high-variance sports outcomes) Tj ET
+BT /F1 10 Tf 1 0 0 1 72 718 Tm (Generated: 2026-04-21) Tj ET
+BT /F1 10 Tf 1 0 0 1 72 703 Tm () Tj ET
+BT /F1 13 Tf 1 0 0 1 72 688 Tm (Project Summary) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 670 Tm (Built a machine learning pipeline that predicts Premier League match outcomes using engineered) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 654 Tm (historical features and optimized SQL extraction.) Tj ET
+BT /F1 10 Tf 1 0 0 1 72 638 Tm () Tj ET
+BT /F1 13 Tf 1 0 0 1 72 623 Tm (Tech Stack) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 605 Tm (Python, Scikit-learn, SQL) Tj ET
+BT /F1 10 Tf 1 0 0 1 72 589 Tm () Tj ET
+BT /F1 13 Tf 1 0 0 1 72 574 Tm (Results Snapshot) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 556 Tm (- 66.8% | Model Accuracy | On noisy real-world outcome data) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 540 Tm (- +17% | Lift vs Baseline | Outperformed naive predictor) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 524 Tm (- 20+ | Engineered Features | Performance and match-context features) Tj ET
+BT /F1 10 Tf 1 0 0 1 72 508 Tm () Tj ET
+BT /F1 13 Tf 1 0 0 1 72 493 Tm (Problem) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 475 Tm (Sports outcomes are noisy, making it hard to produce meaningful predictive lift over baseline) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 459 Tm (assumptions.) Tj ET
+BT /F1 10 Tf 1 0 0 1 72 443 Tm () Tj ET
+BT /F1 13 Tf 1 0 0 1 72 428 Tm (Solution) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 410 Tm (Constructed robust feature pipelines and model evaluation loops that improve signal extraction and) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 394 Tm (benchmark transparently against baseline.) Tj ET
+BT /F1 10 Tf 1 0 0 1 72 378 Tm () Tj ET
+BT /F1 13 Tf 1 0 0 1 72 363 Tm (Highlights) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 345 Tm (- Achieved 66.8% prediction accuracy) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 329 Tm (- Outperformed naive baseline by 17%) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 313 Tm (- Engineered 20+ performance-driven features) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 297 Tm (- Reduced SQL extraction time by 22% on 10K+ records) Tj ET
+BT /F1 10 Tf 1 0 0 1 72 281 Tm () Tj ET
+BT /F1 13 Tf 1 0 0 1 72 266 Tm (Challenges and Tradeoffs) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 248 Tm (- High variance and unpredictable match dynamics. Expanded feature set and benchmarked against) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 232 Tm (baseline continuously.) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 216 Tm (- Feature extraction cost on larger sets. Optimized SQL selection and reduced query runtime by) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 200 Tm (22%.) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 184 Tm (- Model complexity vs interpretability. Kept an interpretable pipeline while improving lift.) Tj ET
+BT /F1 10 Tf 1 0 0 1 72 168 Tm () Tj ET
+BT /F1 13 Tf 1 0 0 1 72 153 Tm (Key Outcomes) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 135 Tm (- Established measurable improvement in a noisy prediction domain) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 119 Tm (- Built reusable feature engineering templates for future experiments) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 103 Tm (- Balanced model quality with practical extraction performance) Tj ET
+BT /F1 10 Tf 1 0 0 1 72 87 Tm () Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 210 >>
+stream
+BT /F1 13 Tf 1 0 0 1 72 760 Tm (Links) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 742 Tm (Repository: https://github.com/Jaskeeratr/Premier-predictor) Tj ET
+BT /F1 11 Tf 1 0 0 1 72 726 Tm (Live Demo: Not provided yet) Tj ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000003548 00000 n 
+0000003674 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3935
+%%EOF
