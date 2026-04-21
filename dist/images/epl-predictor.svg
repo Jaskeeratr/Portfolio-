@@ -1,0 +1,30 @@
+<svg width="960" height="600" viewBox="0 0 960 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="e1" x1="74" y1="32" x2="890" y2="566" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10283E"/>
+      <stop offset="1" stop-color="#071A29"/>
+    </linearGradient>
+    <linearGradient id="e2" x1="216" y1="456" x2="754" y2="456" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#23B2FF"/>
+      <stop offset="1" stop-color="#FF9F5A"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" rx="28" fill="url(#e1)"/>
+  <rect x="98" y="96" width="764" height="406" rx="22" fill="#0A1F30" stroke="#4A708C" stroke-opacity="0.5"/>
+  <circle cx="256" cy="220" r="86" fill="#112E47"/>
+  <circle cx="256" cy="220" r="62" fill="#0D253A"/>
+  <path d="M256 180L279 220L256 260L233 220L256 180Z" stroke="#84B5D4" stroke-width="5" stroke-linejoin="round"/>
+  <rect x="380" y="136" width="434" height="134" rx="16" fill="#102B42"/>
+  <rect x="380" y="292" width="434" height="170" rx="16" fill="#10293F"/>
+  <rect x="418" y="172" width="186" height="12" rx="6" fill="#8AB7D1"/>
+  <rect x="418" y="197" width="328" height="10" rx="5" fill="#638AA9"/>
+  <path d="M418 372H782" stroke="#3C607C" stroke-width="2"/>
+  <path d="M442 372L502 346L560 357L618 326L678 341L744 304" stroke="url(#e2)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="442" cy="372" r="6" fill="#23B2FF"/>
+  <circle cx="744" cy="304" r="6" fill="#FF9F5A"/>
+  <rect x="160" y="348" width="188" height="12" rx="6" fill="#84AFCC"/>
+  <rect x="160" y="372" width="154" height="10" rx="5" fill="#638AA9"/>
+  <text x="130" y="68" fill="#CCE5F6" font-family="Sora, Segoe UI, Arial, sans-serif" font-size="32" font-weight="700">
+    Premier League Predictor
+  </text>
+</svg>

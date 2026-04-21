@@ -1,0 +1,33 @@
+<svg width="960" height="600" viewBox="0 0 960 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ap1" x1="66" y1="34" x2="876" y2="568" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#112D45"/>
+      <stop offset="1" stop-color="#081A2A"/>
+    </linearGradient>
+    <linearGradient id="ap2" x1="176" y1="410" x2="780" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#23B2FF"/>
+      <stop offset="1" stop-color="#1EC8A5"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" rx="28" fill="url(#ap1)"/>
+  <rect x="92" y="96" width="776" height="406" rx="22" fill="#0B1E2F" stroke="#4B718C" stroke-opacity="0.5"/>
+  <rect x="138" y="136" width="214" height="120" rx="14" fill="#102A40"/>
+  <rect x="138" y="278" width="214" height="120" rx="14" fill="#102A40"/>
+  <rect x="384" y="206" width="214" height="120" rx="14" fill="#102A40"/>
+  <rect x="630" y="136" width="184" height="262" rx="14" fill="#102A40"/>
+  <path d="M352 196H384" stroke="#89C3E5" stroke-width="7" stroke-linecap="round"/>
+  <path d="M352 338H384" stroke="#89C3E5" stroke-width="7" stroke-linecap="round"/>
+  <path d="M598 266H630" stroke="#89C3E5" stroke-width="7" stroke-linecap="round"/>
+  <path d="M244 398V450H722V398" stroke="url(#ap2)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="244" cy="398" r="8" fill="#28BBF5"/>
+  <circle cx="722" cy="398" r="8" fill="#35D0B6"/>
+  <rect x="168" y="170" width="154" height="12" rx="6" fill="#7FA5C3"/>
+  <rect x="168" y="194" width="120" height="10" rx="5" fill="#6086A6"/>
+  <rect x="168" y="312" width="144" height="12" rx="6" fill="#7FA5C3"/>
+  <rect x="168" y="336" width="130" height="10" rx="5" fill="#6086A6"/>
+  <rect x="412" y="244" width="142" height="12" rx="6" fill="#7FA5C3"/>
+  <rect x="412" y="268" width="128" height="10" rx="5" fill="#6086A6"/>
+  <text x="138" y="70" fill="#C7E2F4" font-family="Sora, Segoe UI, Arial, sans-serif" font-size="33" font-weight="700">
+    Alberta Energy Data Pipeline
+  </text>
+</svg>

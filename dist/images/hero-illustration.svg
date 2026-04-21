@@ -1,0 +1,52 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="90" y1="50" x2="1080" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B2438"/>
+      <stop offset="1" stop-color="#091727"/>
+    </linearGradient>
+    <linearGradient id="card" x1="318" y1="190" x2="830" y2="746" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#123A56"/>
+      <stop offset="1" stop-color="#0A2236"/>
+    </linearGradient>
+    <linearGradient id="line" x1="270" y1="650" x2="972" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1EC8A5"/>
+      <stop offset="1" stop-color="#23B2FF"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1200" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="35"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" rx="44" fill="url(#bg)"/>
+  <ellipse cx="219" cy="221" rx="170" ry="130" fill="#1EC8A5" fill-opacity="0.35" filter="url(#blur)"/>
+  <ellipse cx="992" cy="706" rx="180" ry="130" fill="#23B2FF" fill-opacity="0.32" filter="url(#blur)"/>
+
+  <rect x="188" y="155" width="824" height="592" rx="34" fill="#08182A" stroke="#3C678A" stroke-opacity="0.45"/>
+  <rect x="235" y="206" width="732" height="500" rx="24" fill="url(#card)" stroke="#4B7696" stroke-opacity="0.5"/>
+
+  <rect x="287" y="262" width="280" height="136" rx="16" fill="#112F48" stroke="#4B7092" stroke-opacity="0.42"/>
+  <rect x="592" y="262" width="322" height="136" rx="16" fill="#102E47" stroke="#4B7092" stroke-opacity="0.42"/>
+  <rect x="287" y="422" width="627" height="100" rx="16" fill="#0F2A40" stroke="#4B7092" stroke-opacity="0.42"/>
+  <rect x="287" y="545" width="627" height="121" rx="16" fill="#0D273B" stroke="#4B7092" stroke-opacity="0.42"/>
+
+  <rect x="318" y="294" width="136" height="13" rx="6.5" fill="#86A7C2"/>
+  <rect x="318" y="322" width="220" height="10" rx="5" fill="#5E82A1"/>
+  <rect x="318" y="344" width="180" height="10" rx="5" fill="#5E82A1"/>
+
+  <rect x="623" y="292" width="130" height="13" rx="6.5" fill="#92BED6"/>
+  <rect x="623" y="321" width="250" height="10" rx="5" fill="#6892B3"/>
+  <rect x="623" y="343" width="210" height="10" rx="5" fill="#6892B3"/>
+
+  <path d="M298 634H892" stroke="#385F80" stroke-width="2" stroke-linecap="round"/>
+  <path d="M328 631L442 607L556 620L664 584L778 612L880 559" stroke="url(#line)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="328" cy="631" r="7" fill="#1EC8A5"/>
+  <circle cx="442" cy="607" r="7" fill="#38D4B6"/>
+  <circle cx="556" cy="620" r="7" fill="#4FD9C7"/>
+  <circle cx="664" cy="584" r="7" fill="#64D5D7"/>
+  <circle cx="778" cy="612" r="7" fill="#7BD0E5"/>
+  <circle cx="880" cy="559" r="7" fill="#93C8F0"/>
+
+  <text x="287" y="116" fill="#B8D7ED" font-family="Manrope, Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">
+    Product + Data Engineering Dashboard
+  </text>
+</svg>
