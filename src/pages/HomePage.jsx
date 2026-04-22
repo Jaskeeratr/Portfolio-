@@ -1,8 +1,6 @@
-﻿import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import ProjectCard from "../components/ProjectCard";
 import Reveal from "../components/Reveal";
-import StatCard from "../components/StatCard";
 import { projects } from "../data/projects";
 import { recruiterHighlights, skillGroups, statCards } from "../data/siteContent";
 
@@ -15,32 +13,31 @@ const rotatingRoles = [
 
 export default function HomePage() {
   const [roleIndex, setRoleIndex] = useState(0);
+  const featuredProjects = projects.slice(0, 3);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setRoleIndex((index) => (index + 1) % rotatingRoles.length);
-    }, 2600);
+    }, 2500);
     return () => clearInterval(timer);
   }, []);
 
-  const featuredProjects = projects.slice(0, 3);
-
   return (
-    <>
-      <section className="hero section">
-        <div className="container hero-grid">
-          <Reveal className="hero-copy">
+    <div className="home-pro">
+      <section className="section page-shell home-pro-hero">
+        <div className="container home-pro-hero-grid">
+          <Reveal className="home-pro-copy" delay={60}>
             <p className="eyebrow">Software Engineering Student | University of Calgary</p>
             <h1>Jaskeerat Rai</h1>
-            <p className="lead">
-              I build production-ready data systems and full-stack experiences that solve real
-              business problems. I am currently pursuing a <strong>Summer 2026 co-op</strong> in
-              software development, data engineering, or analytics.
+            <p className="home-pro-role">
+              Specializing in <strong>{rotatingRoles[roleIndex]}</strong>
             </p>
-            <p className="role-line">
-              Specializing in <span className="role-rotator">{rotatingRoles[roleIndex]}</span>
+            <p className="home-pro-lead">
+              I build production-ready software and data systems that solve real business
+              problems. I am actively pursuing a <strong>Summer 2026 co-op</strong> in software
+              development, data engineering, or analytics.
             </p>
-            <div className="hero-actions">
+            <div className="home-pro-actions">
               <Link className="btn btn-primary" to="/projects">
                 Explore Projects
               </Link>
@@ -53,79 +50,48 @@ export default function HomePage() {
                 View Resume
               </a>
             </div>
-            <div className="availability-banner">
-              <p>
-                <strong>Available for Summer 2026 Co-op</strong>
-              </p>
-              <div className="availability-actions">
-                <a className="btn btn-primary" href="mailto:jaskeerat.rai@ucalgary.ca">
-                  Email Me
-                </a>
-                <a
-                  className="btn btn-secondary"
-                  href="https://www.linkedin.com/in/jaskeeratr22/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  LinkedIn
-                </a>
-              </div>
+            <div className="home-pro-links">
+              <a href="mailto:jaskeerat.rai@ucalgary.ca">jaskeerat.rai@ucalgary.ca</a>
+              <a href="tel:+18257351377">825-735-1377</a>
+              <a href="https://www.linkedin.com/in/jaskeeratr22/" target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
             </div>
-            <ul className="quick-facts">
-              <li>Calgary, AB</li>
-              <li>
-                <a href="mailto:jaskeerat.rai@ucalgary.ca">jaskeerat.rai@ucalgary.ca</a>
-              </li>
-              <li>
-                <a href="tel:+18257351377">825-735-1377</a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/jaskeeratr22/" target="_blank" rel="noreferrer">
-                  LinkedIn Profile
-                </a>
-              </li>
-            </ul>
           </Reveal>
 
-          <Reveal className="hero-visual">
-            <img
-              src="/images/hero-illustration.svg"
-              alt="Dashboard-style data and product illustration"
-            />
-            <div className="floating-card top-card">
-              <h3>Production Delivery</h3>
-              <p>Built and shipped 3 web applications end-to-end in a real organization.</p>
-            </div>
-            <div className="floating-card bottom-card">
-              <h3>Pipeline Scale</h3>
-              <p>Automated ETL workflows processing 500K+ records per monthly run.</p>
+          <Reveal className="home-pro-visual" delay={140}>
+            <div className="home-pro-scene">
+              <div className="home-pro-layer home-pro-layer-back" />
+              <div className="home-pro-layer home-pro-layer-mid" />
+              <img
+                className="home-pro-scene-image"
+                src="/images/hero-illustration.svg"
+                alt="Data product dashboard visualization"
+              />
+              <article className="home-pro-float-card top">
+                <h3>Production Delivery</h3>
+                <p>Shipped full-stack products end-to-end with measurable impact.</p>
+              </article>
+              <article className="home-pro-float-card bottom">
+                <h3>Pipeline Scale</h3>
+                <p>Automated ETL workflows processing 500K+ records per monthly cycle.</p>
+              </article>
             </div>
           </Reveal>
         </div>
       </section>
 
-      <section className="stats section section-tight">
-        <div className="container stats-grid">
-          {statCards.map((card) => (
-            <Reveal key={card.label}>
-              <StatCard {...card} />
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section className="section recruiter-section">
+      <section className="section home-pro-stats">
         <div className="container">
-          <Reveal className="section-head">
-            <p className="eyebrow">Recruiter Highlights</p>
-            <h2>Why teams trust me with real production work.</h2>
-          </Reveal>
-          <div className="recruiter-grid">
-            {recruiterHighlights.map((item) => (
-              <Reveal key={item.title}>
-                <article className="recruiter-card">
-                  <h3>{item.title}</h3>
-                  <p>{item.detail}</p>
+          <div className="home-pro-stat-grid">
+            {statCards.map((card, index) => (
+              <Reveal key={card.label} delay={index * 70}>
+                <article className="home-pro-stat-card">
+                  <p className="value">
+                    {card.value}
+                    {card.suffix}
+                  </p>
+                  <p className="label">{card.label}</p>
                 </article>
               </Reveal>
             ))}
@@ -133,73 +99,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="about section">
-        <div className="container about-grid">
-          <Reveal className="about-image">
-            <img
-              src="/images/profile-pattern.svg"
-              alt="Decorative profile panel with initials"
-              loading="lazy"
-            />
-          </Reveal>
-          <Reveal className="about-copy">
-            <p className="eyebrow">About</p>
-            <h2>Shipping measurable impact through software and data.</h2>
-            <p>
-              I focus on designing systems that are both technically strong and product-aware. My
-              work combines backend engineering, automated pipelines, and user-facing product
-              thinking so teams can move faster with confidence.
-            </p>
-            <p>
-              From AI evaluation systems to analytics infrastructure, I prioritize reliability,
-              transparency, and execution speed.
-            </p>
-            <div className="about-tags">
-              <span>End-to-End Shipping</span>
-              <span>API Design</span>
-              <span>Data Reliability</span>
-              <span>Product Mindset</span>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="projects section">
+      <section className="section home-pro-projects">
         <div className="container">
-          <Reveal className="section-head">
+          <Reveal className="home-pro-section-head">
             <p className="eyebrow">Featured Work</p>
-            <h2>Projects built with clear architecture and outcomes.</h2>
+            <h2>Portfolio projects with architecture and measurable outcomes.</h2>
           </Reveal>
-          <div className="projects-grid">
-            {featuredProjects.map((project) => (
-              <Reveal key={project.slug}>
-                <ProjectCard project={project} />
-              </Reveal>
-            ))}
-          </div>
-          <Reveal className="section-cta-wrap">
-            <Link className="btn btn-primary" to="/projects">
-              View All Project Pages
-            </Link>
-          </Reveal>
-        </div>
-      </section>
 
-      <section className="skills section">
-        <div className="container">
-          <Reveal className="section-head">
-            <p className="eyebrow">Technical Stack</p>
-            <h2>Tools I use to build across product, data, and AI.</h2>
-          </Reveal>
-          <div className="skills-grid">
-            {skillGroups.map((group) => (
-              <Reveal key={group.title}>
-                <article className="skill-group">
-                  <h3>{group.title}</h3>
-                  <div className="chip-wrap">
-                    {group.items.map((item) => (
-                      <span key={item}>{item}</span>
-                    ))}
+          <div className="home-pro-project-grid">
+            {featuredProjects.map((project, index) => (
+              <Reveal key={project.slug} delay={index * 90}>
+                <article className="home-pro-project-card">
+                  <img src={project.image} alt={`${project.name} project preview`} loading="lazy" />
+                  <div className="home-pro-project-body">
+                    <h3>{project.name}</h3>
+                    <p>{project.tagline}</p>
+                    <p className="stack">{project.stack.join(" | ")}</p>
+                    <div className="home-pro-project-actions">
+                      <Link className="btn btn-secondary" to={`/projects/${project.slug}`}>
+                        View Project
+                      </Link>
+                      {project.demoUrl ? (
+                        <a className="btn btn-primary" href={project.demoUrl} target="_blank" rel="noreferrer">
+                          Live Demo
+                        </a>
+                      ) : (
+                        <a className="btn btn-primary" href={project.repoUrl} target="_blank" rel="noreferrer">
+                          Repository
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </article>
               </Reveal>
@@ -208,15 +137,50 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section contact-preview">
+      <section className="section home-pro-focus">
+        <div className="container home-pro-focus-grid">
+          <Reveal className="home-pro-highlights">
+            <p className="eyebrow">How I Work</p>
+            <h2>Reliable execution, clear communication, and measurable delivery.</h2>
+            <ul>
+              {recruiterHighlights.map((item) => (
+                <li key={item.title}>
+                  <h3>{item.title}</h3>
+                  <p>{item.detail}</p>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+
+          <Reveal className="home-pro-skills" delay={120}>
+            <p className="eyebrow">Technical Stack</p>
+            <h2>Cross-stack capability map.</h2>
+            <div className="home-pro-skill-groups">
+              {skillGroups.map((group) => (
+                <article key={group.title} className="home-pro-skill-group">
+                  <h3>{group.title}</h3>
+                  <div className="home-pro-chip-wrap">
+                    {group.items.map((item) => (
+                      <span key={item}>{item}</span>
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="section home-pro-cta">
         <div className="container">
-          <Reveal className="contact-card">
+          <Reveal className="home-pro-cta-card">
             <p className="eyebrow">Open to Opportunities</p>
             <h2>Looking for Summer 2026 co-op roles.</h2>
             <p>
-              If your team is building product or data-heavy systems, I would love to contribute.
+              If your team is building data-heavy or product-focused systems, I would love to
+              contribute.
             </p>
-            <div className="contact-actions">
+            <div className="home-pro-actions">
               <Link className="btn btn-primary" to="/contact">
                 Contact Me
               </Link>
@@ -227,6 +191,6 @@ export default function HomePage() {
           </Reveal>
         </div>
       </section>
-    </>
+    </div>
   );
 }

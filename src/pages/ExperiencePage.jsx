@@ -14,8 +14,12 @@ export default function ExperiencePage() {
         </Reveal>
 
         <div className="timeline">
-          {experiences.map((experience) => (
-            <Reveal key={`${experience.company}-${experience.role}`} className="timeline-item">
+          {experiences.map((experience, index) => (
+            <Reveal
+              key={`${experience.company}-${experience.role}`}
+              className="timeline-item"
+              delay={index * 90}
+            >
               <div className="timeline-dot" aria-hidden="true" />
               <div className="timeline-content">
                 <div className="timeline-meta">
@@ -50,8 +54,8 @@ export default function ExperiencePage() {
           <h2>Current Technical Focus</h2>
         </Reveal>
         <div className="skills-grid">
-          {skillGroups.map((group) => (
-            <Reveal key={group.title}>
+          {skillGroups.map((group, index) => (
+            <Reveal key={group.title} delay={index * 70}>
               <article className="skill-group">
                 <h3>{group.title}</h3>
                 <div className="chip-wrap">

@@ -1,6 +1,33 @@
-﻿import { Link, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Reveal from "../components/Reveal";
 import { getProjectBySlug } from "../data/projects";
+
+const projectThemes = {
+  gapcheck: {
+    kicker: "AI Matching Platform",
+    accent: "#1ec8a5",
+    glow: "rgba(30, 200, 165, 0.36)",
+    gradient: "linear-gradient(130deg, rgba(15, 56, 66, 0.9), rgba(11, 28, 46, 0.84))"
+  },
+  "alberta-energy-data-pipeline": {
+    kicker: "Data Infrastructure",
+    accent: "#ff9f5a",
+    glow: "rgba(255, 159, 90, 0.34)",
+    gradient: "linear-gradient(130deg, rgba(62, 44, 22, 0.9), rgba(23, 30, 43, 0.84))"
+  },
+  "macro-finder": {
+    kicker: "Consumer Product",
+    accent: "#82d67f",
+    glow: "rgba(130, 214, 127, 0.32)",
+    gradient: "linear-gradient(130deg, rgba(27, 57, 38, 0.9), rgba(19, 32, 46, 0.84))"
+  },
+  "premier-league-predictor": {
+    kicker: "Machine Learning Pipeline",
+    accent: "#6fb3ff",
+    glow: "rgba(111, 179, 255, 0.32)",
+    gradient: "linear-gradient(130deg, rgba(26, 41, 72, 0.9), rgba(25, 27, 48, 0.84))"
+  }
+};
 
 export default function ProjectDetailPage() {
   const { slug } = useParams();
@@ -23,42 +50,77 @@ export default function ProjectDetailPage() {
     );
   }
 
+  const theme = projectThemes[project.slug] ?? {
+    kicker: "Engineering Build",
+    accent: "#23b2ff",
+    glow: "rgba(35, 178, 255, 0.32)",
+    gradient: "linear-gradient(130deg, rgba(15, 39, 60, 0.9), rgba(11, 28, 46, 0.84))"
+  };
+
   return (
     <section className="section page-shell project-detail-page">
-      <div className="container">
-        <Reveal className="section-head page-head">
-          <p className="eyebrow">Project Deep Dive</p>
-          <h1>{project.name}</h1>
-          <p>{project.tagline}</p>
-          <p className="stack stack-block">{project.stack.join(" | ")}</p>
-          <div className="detail-actions top-actions">
-            {project.demoUrl ? (
-              <a className="btn btn-primary" href={project.demoUrl} target="_blank" rel="noreferrer">
-                Live Demo
-              </a>
-            ) : (
-              <span className="repo-coming-soon">Live demo link will be added soon</span>
-            )}
-            {project.repoUrl ? (
-              <a className="btn btn-secondary" href={project.repoUrl} target="_blank" rel="noreferrer">
-                View Repository
-              </a>
-            ) : (
-              <span className="repo-coming-soon">Repository link will be added soon</span>
-            )}
-            {project.caseStudyPdf ? (
-              <a className="btn btn-secondary" href={project.caseStudyPdf} target="_blank" rel="noreferrer">
-                Case Study PDF
-              </a>
-            ) : null}
+      <div
+        className="container project-detail-shell"
+        style={{
+          "--project-accent": theme.accent,
+          "--project-glow": theme.glow,
+          "--project-gradient": theme.gradient
+        }}
+      >
+        <Reveal className="project-story-hero" delay={50}>
+          <div className="project-story-copy">
+            <p className="eyebrow">Project Deep Dive | {theme.kicker}</p>
+            <h1>{project.name}</h1>
+            <p className="project-story-tagline">{project.tagline}</p>
+            <div className="project-stack-chips">
+              {project.stack.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
+            </div>
+            <div className="detail-actions top-actions">
+              {project.demoUrl ? (
+                <a className="btn btn-primary" href={project.demoUrl} target="_blank" rel="noreferrer">
+                  Live Demo
+                </a>
+              ) : (
+                <span className="repo-coming-soon">Live demo link will be added soon</span>
+              )}
+              {project.repoUrl ? (
+                <a className="btn btn-secondary" href={project.repoUrl} target="_blank" rel="noreferrer">
+                  View Repository
+                </a>
+              ) : (
+                <span className="repo-coming-soon">Repository link will be added soon</span>
+              )}
+              {project.caseStudyPdf ? (
+                <a className="btn btn-secondary" href={project.caseStudyPdf} target="_blank" rel="noreferrer">
+                  Case Study PDF
+                </a>
+              ) : null}
+            </div>
+          </div>
+
+          <div className="project-story-visual">
+            <div className="project-hero-backdrop" aria-hidden="true" />
+            <img className="project-hero" src={project.image} alt={`${project.name} interface illustration`} />
+            <div className="project-stat-floats" aria-hidden="true">
+              {project.resultsSnapshot.slice(0, 2).map((item) => (
+                <article key={item.label} className="project-stat-float">
+                  <p>{item.value}</p>
+                  <h3>{item.label}</h3>
+                </article>
+              ))}
+            </div>
           </div>
         </Reveal>
 
-        <Reveal>
-          <img className="project-hero" src={project.image} alt={`${project.name} interface illustration`} />
+        <Reveal className="section-head page-head" delay={120}>
+          <p className="eyebrow">Project Narrative</p>
+          <h2>Built for measurable outcomes, not vanity features.</h2>
+          <p>{project.summary}</p>
         </Reveal>
 
-        <Reveal className="results-snapshot">
+        <Reveal className="results-snapshot" delay={180}>
           {project.resultsSnapshot.map((item) => (
             <article key={item.label} className="snapshot-card">
               <p className="snapshot-value">{item.value}</p>
@@ -69,22 +131,22 @@ export default function ProjectDetailPage() {
         </Reveal>
 
         <div className="project-detail-grid">
-          <Reveal className="detail-card">
+          <Reveal className="detail-card" delay={60}>
             <h2>Project Summary</h2>
             <p>{project.summary}</p>
           </Reveal>
 
-          <Reveal className="detail-card">
+          <Reveal className="detail-card" delay={110}>
             <h2>Problem</h2>
             <p>{project.problem}</p>
           </Reveal>
 
-          <Reveal className="detail-card">
+          <Reveal className="detail-card" delay={160}>
             <h2>Solution</h2>
             <p>{project.solution}</p>
           </Reveal>
 
-          <Reveal className="detail-card">
+          <Reveal className="detail-card" delay={210}>
             <h2>Architecture</h2>
             <ul>
               {project.architecture.map((item) => (
@@ -93,7 +155,7 @@ export default function ProjectDetailPage() {
             </ul>
           </Reveal>
 
-          <Reveal className="detail-card detail-card-wide">
+          <Reveal className="detail-card detail-card-wide" delay={260}>
             <h2>Architecture Flow</h2>
             <img
               className="architecture-diagram"
@@ -103,7 +165,7 @@ export default function ProjectDetailPage() {
             />
           </Reveal>
 
-          <Reveal className="detail-card detail-card-wide">
+          <Reveal className="detail-card detail-card-wide" delay={300}>
             <h2>Key Outcomes</h2>
             <ul>
               {project.outcomes.map((item) => (
@@ -112,7 +174,7 @@ export default function ProjectDetailPage() {
             </ul>
           </Reveal>
 
-          <Reveal className="detail-card detail-card-wide">
+          <Reveal className="detail-card detail-card-wide" delay={340}>
             <h2>Challenges + Tradeoffs</h2>
             <ul>
               {project.challengesTradeoffs.map((item) => (
@@ -121,7 +183,7 @@ export default function ProjectDetailPage() {
             </ul>
           </Reveal>
 
-          <Reveal className="detail-card detail-card-wide">
+          <Reveal className="detail-card detail-card-wide" delay={380}>
             <h2>Impact Highlights</h2>
             <ul>
               {project.highlights.map((item) => (

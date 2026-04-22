@@ -1,8 +1,23 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function ProjectCard({ project }) {
+  function onCardMove(event) {
+    const card = event.currentTarget;
+    const bounds = card.getBoundingClientRect();
+    const x = event.clientX - bounds.left;
+    const y = event.clientY - bounds.top;
+    card.style.setProperty("--card-mx", `${x}px`);
+    card.style.setProperty("--card-my", `${y}px`);
+  }
+
+  function onCardLeave(event) {
+    const card = event.currentTarget;
+    card.style.removeProperty("--card-mx");
+    card.style.removeProperty("--card-my");
+  }
+
   return (
-    <article className="project-card">
+    <article className="project-card" onMouseMove={onCardMove} onMouseLeave={onCardLeave}>
       <img src={project.image} alt={`${project.name} preview`} loading="lazy" />
       <div className="project-body">
         <h3>{project.name}</h3>
