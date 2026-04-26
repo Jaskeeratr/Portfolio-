@@ -5,6 +5,9 @@ export const projects = [
     tagline: "AI-powered internship matching and resume gap analysis platform",
     stack: ["React", "FastAPI", "PostgreSQL", "Claude API", "Apache Airflow"],
     image: "/images/gapcheck.svg",
+    storyImage: "/images/projects/gapcheck.svg",
+    storyImageAlt:
+      "Abstract dashboard showing resume parsing, internship cards, and AI match scoring for GapCheck",
     architectureDiagram: "/images/arch-gapcheck.svg",
     repoUrl: "https://github.com/Jaskeeratr/gapcheck",
     demoUrl: "https://gapcheck-1.onrender.com",
@@ -50,6 +53,9 @@ export const projects = [
     tagline: "Automated ETL and analytics stack for large-scale production datasets",
     stack: ["Python", "Apache Airflow", "PostgreSQL", "Power BI", "Docker"],
     image: "/images/alberta-pipeline.svg",
+    storyImage: "/images/projects/alberta-energy-pipeline.svg",
+    storyImageAlt:
+      "Abstract ETL pipeline with raw energy data, Airflow orchestration, and analytics dashboard panels",
     architectureDiagram: "/images/arch-alberta.svg",
     repoUrl: "https://github.com/Jaskeeratr/alberta-energy-pipeline",
     demoUrl: null,
@@ -95,6 +101,9 @@ export const projects = [
     tagline: "Personalized full-stack nutrition app with scalable meal tracking",
     stack: ["React", "Node.js", "PostgreSQL"],
     image: "/images/macro-finder.svg",
+    storyImage: "/images/projects/macro-finder.svg",
+    storyImageAlt:
+      "Premium nutrition app visual with macro cards, food labels, meal tracking, and mobile UI panels",
     architectureDiagram: "/images/arch-macro.svg",
     repoUrl: "https://csgit.ucalgary.ca/jashan.bhinder/seng513-202601-pg-17",
     demoUrl: null,
@@ -139,6 +148,9 @@ export const projects = [
     tagline: "End-to-end ML pipeline for high-variance sports outcomes",
     stack: ["Python", "Scikit-learn", "SQL"],
     image: "/images/epl-predictor.svg",
+    storyImage: "/images/projects/premier-league-predictor.svg",
+    storyImageAlt:
+      "Machine learning prediction dashboard with model nodes, charts, and sports outcome data signals",
     architectureDiagram: "/images/arch-epl.svg",
     repoUrl: "https://github.com/Jaskeeratr/Premier-predictor",
     demoUrl: null,

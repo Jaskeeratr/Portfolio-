@@ -1,0 +1,23 @@
+﻿<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="42" fill="#08121e"/>
+  <circle cx="300" cy="250" r="300" fill="#ffc7d6" opacity="0.16"/>
+  <circle cx="860" cy="530" r="350" fill="#7af35e" opacity="0.1"/>
+  <g opacity="0.12" stroke="#fff0f5"><path d="M100 150H1100"/><path d="M100 290H1100"/><path d="M100 430H1100"/><path d="M100 570H1100"/><path d="M260 80V680"/><path d="M500 80V680"/><path d="M740 80V680"/><path d="M980 80V680"/></g>
+  <g transform="translate(160 160)">
+    <rect width="330" height="430" rx="34" fill="#101b2c" stroke="#ffc7d6" stroke-opacity="0.34"/>
+    <circle cx="165" cy="128" r="70" fill="#ffc7d6" opacity="0.13"/>
+    <path d="M145 132 C116 104 147 70 165 102 C183 70 214 104 185 132 L165 154 L145 132Z" fill="#ffc7d6" opacity="0.78"/>
+    <rect x="52" y="238" width="226" height="14" rx="7" fill="#fff0f5" opacity="0.58"/>
+    <rect x="52" y="278" width="176" height="12" rx="6" fill="#fff0f5" opacity="0.36"/>
+    <rect x="52" y="330" width="226" height="72" rx="18" fill="#17243a" stroke="#ffc7d6" stroke-opacity="0.16"/>
+  </g>
+  <g transform="translate(610 145)">
+    <rect width="430" height="460" rx="36" fill="#101b2c" stroke="#7af35e" stroke-opacity="0.22"/>
+    <path d="M88 324 C115 232 156 226 184 282 C224 174 286 158 342 94" stroke="#ffc7d6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+    <g fill="#ffc7d6" opacity="0.72"><circle cx="184" cy="282" r="10"/><circle cx="342" cy="94" r="10"/></g>
+    <g opacity="0.42"><path d="M92 370H338" stroke="#fff0f5" stroke-width="12" stroke-linecap="round"/><path d="M92 404H270" stroke="#fff0f5" stroke-width="10" stroke-linecap="round"/></g>
+    <circle cx="102" cy="118" r="26" fill="#ffc7d6" opacity="0.12"/><circle cx="150" cy="92" r="15" fill="#ffc7d6" opacity="0.2"/><circle cx="366" cy="270" r="18" fill="#7af35e" opacity="0.12"/>
+  </g>
+  <text x="130" y="92" fill="#fff8fb" font-family="Inter, Arial" font-size="42" font-weight="800">HKL App / Website</text>
+  <text x="130" y="684" fill="#dbc8d2" font-family="Inter, Arial" font-size="24">calm wellness + kindness journaling + soft blossom interaction system</text>
+</svg>

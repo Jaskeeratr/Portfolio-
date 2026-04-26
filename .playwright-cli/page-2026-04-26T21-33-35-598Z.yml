@@ -1,0 +1,199 @@
+- generic [ref=e2]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - link "JR." [ref=e8]:
+        - /url: /
+      - button "Toggle navigation" [ref=e9]
+      - navigation:
+        - link "Home":
+          - /url: /
+        - link "Projects":
+          - /url: /projects
+        - link "Experience":
+          - /url: /experience
+        - link "Contact":
+          - /url: /contact
+        - link "Resume":
+          - /url: /resume/Jaskeerat-Rai-Resume.pdf
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/in/jaskeeratr22/
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - paragraph [ref=e18]: Software Engineering Student | University of Calgary
+          - heading "Jaskeerat Rai" [level=1] [ref=e19]
+          - paragraph [ref=e20]:
+            - text: Specializing in
+            - strong [ref=e21]: Data Engineering
+          - paragraph [ref=e22]:
+            - text: I build production-ready software and data systems that solve real business problems. I am actively pursuing a
+            - strong [ref=e23]: Summer 2026 co-op
+            - text: in software development, data engineering, or analytics.
+          - generic [ref=e24]:
+            - link "Explore Projects" [ref=e25]:
+              - /url: /projects
+              - img [ref=e26]
+              - text: Explore Projects
+            - link "View Resume" [ref=e33]:
+              - /url: /resume/Jaskeerat-Rai-Resume.pdf
+              - img [ref=e34]
+              - text: View Resume
+          - generic [ref=e37]:
+            - link "jaskeerat.rai@ucalgary.ca" [ref=e38]:
+              - /url: mailto:jaskeerat.rai@ucalgary.ca
+            - link "825-735-1377" [ref=e39]:
+              - /url: tel:+18257351377
+            - link "LinkedIn" [ref=e40]:
+              - /url: https://www.linkedin.com/in/jaskeeratr22/
+        - generic [ref=e42]:
+          - img "Data product dashboard visualization" [ref=e45]
+          - article [ref=e46]:
+            - heading "Production Delivery" [level=3] [ref=e47]
+            - paragraph [ref=e48]: Shipped full-stack products end-to-end with measurable impact.
+          - article [ref=e49]:
+            - heading "Pipeline Scale" [level=3] [ref=e50]
+            - paragraph [ref=e51]: Automated ETL workflows processing 500K+ records per monthly cycle.
+          - generic [ref=e52]:
+            - generic [ref=e53]: pipeline.run()
+            - generic [ref=e54]: score.match = 92%
+            - generic [ref=e55]: deploy.status = live
+      - generic [ref=e58]:
+        - article [ref=e60]:
+          - paragraph [ref=e61]: 500K+
+          - paragraph [ref=e62]: Records processed per ETL run
+        - article [ref=e64]:
+          - paragraph [ref=e65]: 30%
+          - paragraph [ref=e66]: Page-load improvement shipped
+        - article [ref=e68]:
+          - paragraph [ref=e69]: 1000+
+          - paragraph [ref=e70]: AI outputs evaluated
+        - article [ref=e72]:
+          - paragraph [ref=e73]: 66.8%
+          - paragraph [ref=e74]: Model accuracy
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - paragraph [ref=e78]: Featured Work
+          - heading "Portfolio projects with architecture and measurable outcomes." [level=2] [ref=e79]
+        - generic [ref=e80]:
+          - article [ref=e82]:
+            - img "GapCheck project preview" [ref=e83]
+            - generic [ref=e84]:
+              - heading "GapCheck" [level=3] [ref=e85]
+              - paragraph [ref=e86]: AI-powered internship matching and resume gap analysis platform
+              - paragraph [ref=e87]: React | FastAPI | PostgreSQL | Claude API | Apache Airflow
+              - generic [ref=e88]:
+                - link "View Project" [ref=e89]:
+                  - /url: /projects/gapcheck
+                  - img [ref=e90]
+                  - text: View Project
+                - link "Live Demo" [ref=e92]:
+                  - /url: https://gapcheck-1.onrender.com
+                  - img [ref=e93]
+                  - text: Live Demo
+          - article [ref=e101]:
+            - img "Alberta Energy Data Pipeline project preview" [ref=e102]
+            - generic [ref=e103]:
+              - heading "Alberta Energy Data Pipeline" [level=3] [ref=e104]
+              - paragraph [ref=e105]: Automated ETL and analytics stack for large-scale production datasets
+              - paragraph [ref=e106]: Python | Apache Airflow | PostgreSQL | Power BI | Docker
+              - generic [ref=e107]:
+                - link "View Project" [ref=e108]:
+                  - /url: /projects/alberta-energy-data-pipeline
+                  - img [ref=e109]
+                  - text: View Project
+                - link "Repository" [ref=e111]:
+                  - /url: https://github.com/Jaskeeratr/alberta-energy-pipeline
+                  - img [ref=e112]
+                  - text: Repository
+          - article [ref=e115]:
+            - img "Macro Finder project preview" [ref=e116]
+            - generic [ref=e117]:
+              - heading "Macro Finder" [level=3] [ref=e118]
+              - paragraph [ref=e119]: Personalized full-stack nutrition app with scalable meal tracking
+              - paragraph [ref=e120]: React | Node.js | PostgreSQL
+              - generic [ref=e121]:
+                - link "View Project" [ref=e122]:
+                  - /url: /projects/macro-finder
+                  - img [ref=e123]
+                  - text: View Project
+                - link "Repository" [ref=e125]:
+                  - /url: https://csgit.ucalgary.ca/jashan.bhinder/seng513-202601-pg-17
+                  - img [ref=e126]
+                  - text: Repository
+      - generic [ref=e129]:
+        - generic [ref=e130]:
+          - paragraph [ref=e131]: How I Work
+          - heading "Reliable execution, clear communication, and measurable delivery." [level=2] [ref=e132]
+          - list [ref=e133]:
+            - listitem [ref=e134]:
+              - heading "Fast Shipping" [level=3] [ref=e135]
+              - paragraph [ref=e136]: Delivered multiple production systems across internships and project teams.
+            - listitem [ref=e137]:
+              - heading "Data Reliability" [level=3] [ref=e138]
+              - paragraph [ref=e139]: Built validation-first pipelines with auditability and measurable quality controls.
+            - listitem [ref=e140]:
+              - heading "Product Thinking" [level=3] [ref=e141]
+              - paragraph [ref=e142]: Designs technical solutions with user value, clarity, and real-world constraints.
+        - generic [ref=e143]:
+          - paragraph [ref=e144]: Technical Stack
+          - heading "Cross-stack capability map." [level=2] [ref=e145]
+          - generic [ref=e146]:
+            - article [ref=e147]:
+              - heading "Languages" [level=3] [ref=e148]
+              - generic [ref=e149]:
+                - generic [ref=e150]: Python
+                - generic [ref=e151]: JavaScript
+                - generic [ref=e152]: TypeScript
+                - generic [ref=e153]: SQL
+                - generic [ref=e154]: C++
+                - generic [ref=e155]: C
+            - article [ref=e156]:
+              - heading "Frontend" [level=3] [ref=e157]
+              - generic [ref=e158]:
+                - generic [ref=e159]: React
+                - generic [ref=e160]: HTML5
+                - generic [ref=e161]: CSS3
+                - generic [ref=e162]: Tailwind CSS
+            - article [ref=e163]:
+              - heading "Backend" [level=3] [ref=e164]
+              - generic [ref=e165]:
+                - generic [ref=e166]: Node.js
+                - generic [ref=e167]: FastAPI
+                - generic [ref=e168]: Express
+                - generic [ref=e169]: REST APIs
+            - article [ref=e170]:
+              - heading "Data and AI" [level=3] [ref=e171]
+              - generic [ref=e172]:
+                - generic [ref=e173]: Apache Airflow
+                - generic [ref=e174]: PostgreSQL
+                - generic [ref=e175]: MySQL
+                - generic [ref=e176]: Snowflake
+                - generic [ref=e177]: Pandas
+                - generic [ref=e178]: NumPy
+                - generic [ref=e179]: Power BI
+                - generic [ref=e180]: Claude API
+                - generic [ref=e181]: Docker
+                - generic [ref=e182]: AWS S3
+                - generic [ref=e183]: Git
+      - generic [ref=e186]:
+        - paragraph [ref=e187]: Open to Opportunities
+        - heading "Looking for Summer 2026 co-op roles." [level=2] [ref=e188]
+        - paragraph [ref=e189]: If your team is building data-heavy or product-focused systems, I would love to contribute.
+        - generic [ref=e190]:
+          - link "Contact Me" [ref=e191]:
+            - /url: /contact
+            - img [ref=e192]
+            - text: Contact Me
+          - link "View Experience" [ref=e195]:
+            - /url: /experience
+            - img [ref=e196]
+            - text: View Experience
+  - contentinfo [ref=e198]:
+    - generic [ref=e199]:
+      - paragraph [ref=e200]: © 2026 Jaskeerat Rai. Built for impact.
+      - generic [ref=e201]:
+        - link "LinkedIn" [ref=e202]:
+          - /url: https://www.linkedin.com/in/jaskeeratr22/
+        - link "GitHub" [ref=e203]:
+          - /url: https://github.com/Jaskeeratr

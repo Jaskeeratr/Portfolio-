@@ -1,4 +1,6 @@
+import { ArrowLeft, Code2, ExternalLink, FileText } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
+import ProjectVisual from "../components/ProjectVisual";
 import Reveal from "../components/Reveal";
 import { getProjectBySlug } from "../data/projects";
 
@@ -80,6 +82,7 @@ export default function ProjectDetailPage() {
             <div className="detail-actions top-actions">
               {project.demoUrl ? (
                 <a className="btn btn-primary" href={project.demoUrl} target="_blank" rel="noreferrer">
+                  <ExternalLink size={16} aria-hidden="true" />
                   Live Demo
                 </a>
               ) : (
@@ -87,6 +90,7 @@ export default function ProjectDetailPage() {
               )}
               {project.repoUrl ? (
                 <a className="btn btn-secondary" href={project.repoUrl} target="_blank" rel="noreferrer">
+                  <Code2 size={16} aria-hidden="true" />
                   View Repository
                 </a>
               ) : (
@@ -94,6 +98,7 @@ export default function ProjectDetailPage() {
               )}
               {project.caseStudyPdf ? (
                 <a className="btn btn-secondary" href={project.caseStudyPdf} target="_blank" rel="noreferrer">
+                  <FileText size={16} aria-hidden="true" />
                   Case Study PDF
                 </a>
               ) : null}
@@ -102,7 +107,7 @@ export default function ProjectDetailPage() {
 
           <div className="project-story-visual">
             <div className="project-hero-backdrop" aria-hidden="true" />
-            <img className="project-hero" src={project.image} alt={`${project.name} interface illustration`} />
+            <ProjectVisual project={project} className="project-hero" />
             <div className="project-stat-floats" aria-hidden="true">
               {project.resultsSnapshot.slice(0, 2).map((item) => (
                 <article key={item.label} className="project-stat-float">
@@ -148,7 +153,7 @@ export default function ProjectDetailPage() {
 
           <Reveal className="detail-card" delay={210}>
             <h2>Architecture</h2>
-            <ul>
+            <ul className="architecture-list">
               {project.architecture.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -192,14 +197,17 @@ export default function ProjectDetailPage() {
             </ul>
             <div className="detail-actions">
               <Link className="btn btn-secondary" to="/projects">
+                <ArrowLeft size={16} aria-hidden="true" />
                 Back to Projects
               </Link>
               {project.caseStudyPdf ? (
                 <a className="btn btn-secondary" href={project.caseStudyPdf} target="_blank" rel="noreferrer">
+                  <FileText size={16} aria-hidden="true" />
                   Case Study PDF
                 </a>
               ) : null}
               <a className="btn btn-primary" href="/resume/Jaskeerat-Rai-Resume.pdf" target="_blank" rel="noreferrer">
+                <FileText size={16} aria-hidden="true" />
                 Resume
               </a>
             </div>

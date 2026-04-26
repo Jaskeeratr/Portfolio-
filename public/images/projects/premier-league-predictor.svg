@@ -1,0 +1,24 @@
+﻿<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="42" fill="#07111f"/>
+  <circle cx="288" cy="160" r="280" fill="#55d2ff" opacity="0.15"/>
+  <circle cx="890" cy="560" r="340" fill="#7f7cff" opacity="0.15"/>
+  <g opacity="0.14" stroke="#dce8ff"><path d="M100 135H1100"/><path d="M100 255H1100"/><path d="M100 375H1100"/><path d="M100 495H1100"/><path d="M100 615H1100"/><path d="M230 70V700"/><path d="M460 70V700"/><path d="M690 70V700"/><path d="M920 70V700"/></g>
+  <rect x="110" y="150" width="430" height="430" rx="32" fill="#0d1a2d" stroke="#55d2ff" stroke-opacity="0.32"/>
+  <path d="M165 486 C225 354 275 410 324 296 C370 188 424 248 488 174" stroke="#55d2ff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M165 420 C220 390 278 440 326 376 C380 306 424 330 488 300" stroke="#7af35e" stroke-width="6" stroke-linecap="round" opacity="0.65"/>
+  <circle cx="324" cy="296" r="13" fill="#f5f8ff"/><circle cx="488" cy="174" r="13" fill="#f5f8ff"/>
+  <rect x="170" y="190" width="150" height="12" rx="6" fill="#dce8ff" opacity="0.42"/>
+  <g transform="translate(650 130)">
+    <rect width="420" height="500" rx="34" fill="#0d1a2d" stroke="#7f7cff" stroke-opacity="0.34"/>
+    <text x="42" y="74" fill="#f5f8ff" font-family="Inter, Arial" font-size="26" font-weight="800">Model Pipeline</text>
+    <g stroke="#55d2ff" stroke-width="4" opacity="0.58"><path d="M108 150H312"/><path d="M108 250H312"/><path d="M108 350H312"/><path d="M210 150V350"/></g>
+    <circle cx="108" cy="150" r="30" fill="#13243b" stroke="#55d2ff" stroke-width="4"/>
+    <circle cx="312" cy="150" r="30" fill="#13243b" stroke="#7af35e" stroke-width="4"/>
+    <circle cx="108" cy="250" r="30" fill="#13243b" stroke="#7f7cff" stroke-width="4"/>
+    <circle cx="312" cy="250" r="30" fill="#13243b" stroke="#ffcf6b" stroke-width="4"/>
+    <circle cx="210" cy="350" r="38" fill="#13243b" stroke="#f5f8ff" stroke-opacity="0.42" stroke-width="4"/>
+    <rect x="70" y="424" width="280" height="16" rx="8" fill="#dce8ff" opacity="0.18"/>
+  </g>
+  <text x="110" y="92" fill="#f5f8ff" font-family="Inter, Arial" font-size="42" font-weight="800">ML Prediction Pipeline</text>
+  <text x="110" y="684" fill="#b8c9e8" font-family="Inter, Arial" font-size="24">feature engineering + model evaluation + sports outcome prediction</text>
+</svg>

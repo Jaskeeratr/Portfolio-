@@ -1,0 +1,34 @@
+﻿<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="42" fill="#07111f"/>
+  <circle cx="205" cy="585" r="310" fill="#ff9f5a" opacity="0.15"/>
+  <circle cx="880" cy="205" r="330" fill="#55d2ff" opacity="0.13"/>
+  <g opacity="0.12" stroke="#dce8ff"><path d="M100 140H1100"/><path d="M100 260H1100"/><path d="M100 380H1100"/><path d="M100 500H1100"/><path d="M100 620H1100"/><path d="M230 70V700"/><path d="M460 70V700"/><path d="M690 70V700"/><path d="M920 70V700"/></g>
+  <path d="M120 382 H305 C365 382 365 242 430 242 H610 C680 242 670 505 745 505 H1080" stroke="#ff9f5a" stroke-width="8" stroke-linecap="round" opacity="0.42"/>
+  <path d="M120 478 H370 C430 478 420 330 502 330 H690 C760 330 750 204 834 204 H1080" stroke="#55d2ff" stroke-width="5" stroke-linecap="round" opacity="0.32"/>
+  <g transform="translate(136 190)">
+    <rect width="250" height="360" rx="30" fill="#0d1a2d" stroke="#ff9f5a" stroke-opacity="0.34"/>
+    <text x="34" y="70" fill="#f8efe8" font-family="Inter, Arial" font-size="25" font-weight="800">Raw AER</text>
+    <rect x="34" y="112" width="180" height="12" rx="6" fill="#dce8ff" opacity="0.45"/>
+    <rect x="34" y="146" width="138" height="12" rx="6" fill="#dce8ff" opacity="0.35"/>
+    <rect x="34" y="180" width="156" height="12" rx="6" fill="#dce8ff" opacity="0.35"/>
+    <rect x="34" y="250" width="182" height="70" rx="18" fill="#15233a"/>
+  </g>
+  <g transform="translate(474 150)">
+    <rect width="260" height="440" rx="34" fill="#0d1a2d" stroke="#55d2ff" stroke-opacity="0.3"/>
+    <circle cx="130" cy="118" r="58" fill="#55d2ff" opacity="0.12"/>
+    <path d="M88 118H172M130 76V160" stroke="#55d2ff" stroke-width="10" stroke-linecap="round" opacity="0.78"/>
+    <text x="54" y="238" fill="#f5f8ff" font-family="Inter, Arial" font-size="26" font-weight="800">Airflow</text>
+    <rect x="42" y="276" width="176" height="12" rx="6" fill="#ff9f5a" opacity="0.66"/>
+    <rect x="42" y="310" width="126" height="12" rx="6" fill="#dce8ff" opacity="0.36"/>
+    <rect x="42" y="344" width="156" height="12" rx="6" fill="#dce8ff" opacity="0.36"/>
+  </g>
+  <g transform="translate(818 190)">
+    <rect width="250" height="360" rx="30" fill="#0d1a2d" stroke="#7af35e" stroke-opacity="0.25"/>
+    <text x="34" y="70" fill="#f5f8ff" font-family="Inter, Arial" font-size="25" font-weight="800">Analytics</text>
+    <rect x="36" y="118" width="178" height="150" rx="20" fill="#13243b"/>
+    <path d="M62 230 L96 190 L132 205 L182 142" stroke="#7af35e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="36" y="302" width="170" height="12" rx="6" fill="#dce8ff" opacity="0.42"/>
+  </g>
+  <text x="120" y="92" fill="#f5f8ff" font-family="Inter, Arial" font-size="42" font-weight="800">Alberta Energy Data Pipeline</text>
+  <text x="120" y="684" fill="#b8c9e8" font-family="Inter, Arial" font-size="24">ETL orchestration + validation + warehouse analytics dashboard</text>
+</svg>

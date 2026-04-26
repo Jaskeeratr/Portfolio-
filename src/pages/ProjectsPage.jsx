@@ -4,7 +4,7 @@ import { projects } from "../data/projects";
 
 export default function ProjectsPage() {
   return (
-    <section className="section page-shell">
+    <section className="section page-shell projects-story-page">
       <div className="container">
         <Reveal className="section-head page-head">
           <p className="eyebrow">Projects</p>

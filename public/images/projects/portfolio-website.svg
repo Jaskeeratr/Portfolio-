@@ -1,0 +1,23 @@
+﻿<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="42" fill="#07111f"/>
+  <circle cx="260" cy="190" r="270" fill="#55d2ff" opacity="0.14"/>
+  <circle cx="880" cy="520" r="340" fill="#7af35e" opacity="0.12"/>
+  <g opacity="0.15" stroke="#dce8ff"><path d="M90 125H1110"/><path d="M90 245H1110"/><path d="M90 365H1110"/><path d="M90 485H1110"/><path d="M90 605H1110"/><path d="M210 65V695"/><path d="M420 65V695"/><path d="M630 65V695"/><path d="M840 65V695"/><path d="M1050 65V695"/></g>
+  <rect x="130" y="150" width="940" height="460" rx="36" fill="#0d1a2d" stroke="#55d2ff" stroke-opacity="0.28"/>
+  <rect x="178" y="205" width="400" height="270" rx="28" fill="#111f34" stroke="#dce8ff" stroke-opacity="0.12"/>
+  <rect x="214" y="245" width="160" height="14" rx="7" fill="#dce8ff" opacity="0.62"/>
+  <rect x="214" y="282" width="300" height="12" rx="6" fill="#8ea4c9" opacity="0.44"/>
+  <rect x="214" y="316" width="240" height="12" rx="6" fill="#8ea4c9" opacity="0.36"/>
+  <rect x="214" y="384" width="94" height="58" rx="16" fill="#55d2ff" opacity="0.14" stroke="#55d2ff" stroke-opacity="0.3"/>
+  <rect x="330" y="384" width="94" height="58" rx="16" fill="#7af35e" opacity="0.12" stroke="#7af35e" stroke-opacity="0.3"/>
+  <rect x="446" y="384" width="94" height="58" rx="16" fill="#7f7cff" opacity="0.12" stroke="#7f7cff" stroke-opacity="0.3"/>
+  <g transform="translate(680 205)">
+    <rect width="300" height="300" rx="32" fill="#111f34" stroke="#dce8ff" stroke-opacity="0.12"/>
+    <path d="M70 220 L120 160 L170 190 L232 90" stroke="#7af35e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="120" cy="160" r="10" fill="#55d2ff"/><circle cx="170" cy="190" r="10" fill="#55d2ff"/><circle cx="232" cy="90" r="10" fill="#55d2ff"/>
+    <rect x="54" y="48" width="150" height="12" rx="6" fill="#dce8ff" opacity="0.5"/>
+  </g>
+  <path d="M190 542 C360 492 520 620 702 542 C840 482 930 520 1028 462" stroke="#55d2ff" stroke-width="5" stroke-linecap="round" opacity="0.28"/>
+  <text x="130" y="92" fill="#f5f8ff" font-family="Inter, Arial" font-size="42" font-weight="800">Portfolio Website</text>
+  <text x="130" y="684" fill="#b8c9e8" font-family="Inter, Arial" font-size="24">React UI systems + interactive project storytelling + premium frontend engineering</text>
+</svg>

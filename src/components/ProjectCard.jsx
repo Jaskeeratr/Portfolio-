@@ -1,4 +1,7 @@
+import { ArrowRight, Code2, ExternalLink, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
+import ProjectVisual from "./ProjectVisual";
+import TiltCard from "./TiltCard";
 
 export default function ProjectCard({ project }) {
   function onCardMove(event) {
@@ -17,8 +20,8 @@ export default function ProjectCard({ project }) {
   }
 
   return (
-    <article className="project-card" onMouseMove={onCardMove} onMouseLeave={onCardLeave}>
-      <img src={project.image} alt={`${project.name} preview`} loading="lazy" />
+    <TiltCard className="project-card" onMouseMove={onCardMove} onMouseLeave={onCardLeave}>
+      <ProjectVisual project={project} />
       <div className="project-body">
         <h3>{project.name}</h3>
         <p className="stack">{project.stack.join(" | ")}</p>
@@ -30,6 +33,7 @@ export default function ProjectCard({ project }) {
         </ul>
         <div className="project-actions">
           <Link className="btn btn-secondary project-link" to={`/projects/${project.slug}`}>
+            <ArrowRight size={16} aria-hidden="true" />
             View Project Details
           </Link>
           {project.demoUrl ? (
@@ -39,6 +43,7 @@ export default function ProjectCard({ project }) {
               target="_blank"
               rel="noreferrer"
             >
+              <ExternalLink size={16} aria-hidden="true" />
               Live Demo
             </a>
           ) : (
@@ -51,6 +56,7 @@ export default function ProjectCard({ project }) {
               target="_blank"
               rel="noreferrer"
             >
+              <Code2 size={16} aria-hidden="true" />
               View Repository
             </a>
           ) : (
@@ -63,11 +69,12 @@ export default function ProjectCard({ project }) {
               target="_blank"
               rel="noreferrer"
             >
+              <FileText size={16} aria-hidden="true" />
               Case Study PDF
             </a>
           ) : null}
         </div>
       </div>
-    </article>
+    </TiltCard>
   );
 }

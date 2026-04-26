@@ -1,16 +1,15 @@
-﻿import Reveal from "../components/Reveal";
+import { BriefcaseBusiness, Users } from "lucide-react";
+import Reveal from "../components/Reveal";
 import { experiences, skillGroups } from "../data/siteContent";
 
 export default function ExperiencePage() {
   return (
-    <section className="section page-shell">
+    <section className="section page-shell experience-page">
       <div className="container">
         <Reveal className="section-head page-head">
           <p className="eyebrow">Experience</p>
           <h1>Professional Experience and Leadership</h1>
-          <p>
-            Delivery-focused roles across full-stack development and AI quality systems.
-          </p>
+          <p>Delivery-focused roles across full-stack development and AI quality systems.</p>
         </Reveal>
 
         <div className="timeline">
@@ -24,6 +23,7 @@ export default function ExperiencePage() {
               <div className="timeline-content">
                 <div className="timeline-meta">
                   <h3>
+                    <BriefcaseBusiness size={18} aria-hidden="true" />
                     {experience.role} | {experience.company}
                   </h3>
                   <p>
@@ -42,7 +42,10 @@ export default function ExperiencePage() {
 
         <Reveal className="leadership-card section-card-gap">
           <p className="eyebrow">Leadership</p>
-          <h2>Co-President | Sikh Student Association, University of Calgary</h2>
+          <h2>
+            <Users size={22} aria-hidden="true" />
+            Co-President | Sikh Student Association, University of Calgary
+          </h2>
           <p>
             Leading a 100+ member organization and coordinating executive teams to run 10+
             cultural and community events annually.

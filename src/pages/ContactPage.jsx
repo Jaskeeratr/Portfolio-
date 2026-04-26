@@ -1,3 +1,4 @@
+import { Code2, ExternalLink, FileText, Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import Reveal from "../components/Reveal";
 
@@ -83,23 +84,23 @@ export default function ContactPage() {
         <Reveal className="contact-card">
           <div className="contact-grid">
             <article className="contact-item">
-              <h3>Email</h3>
+              <h3><Mail size={17} aria-hidden="true" /> Email</h3>
               <p>
                 <a href="mailto:jaskeerat.rai@ucalgary.ca">jaskeerat.rai@ucalgary.ca</a>
               </p>
             </article>
             <article className="contact-item">
-              <h3>Phone</h3>
+              <h3><Phone size={17} aria-hidden="true" /> Phone</h3>
               <p>
                 <a href="tel:+18257351377">825-735-1377</a>
               </p>
             </article>
             <article className="contact-item">
-              <h3>Location</h3>
+              <h3><MapPin size={17} aria-hidden="true" /> Location</h3>
               <p>Calgary, Alberta</p>
             </article>
             <article className="contact-item">
-              <h3>Resume</h3>
+              <h3><FileText size={17} aria-hidden="true" /> Resume</h3>
               <p>
                 <a href="/resume/Jaskeerat-Rai-Resume.pdf" target="_blank" rel="noreferrer">
                   Open PDF Resume
@@ -107,7 +108,7 @@ export default function ContactPage() {
               </p>
             </article>
             <article className="contact-item">
-              <h3>LinkedIn</h3>
+              <h3><ExternalLink size={17} aria-hidden="true" /> LinkedIn</h3>
               <p>
                 <a href="https://www.linkedin.com/in/jaskeeratr22/" target="_blank" rel="noreferrer">
                   linkedin.com/in/jaskeeratr22
@@ -115,7 +116,7 @@ export default function ContactPage() {
               </p>
             </article>
             <article className="contact-item">
-              <h3>GitHub</h3>
+              <h3><Code2 size={17} aria-hidden="true" /> GitHub</h3>
               <p>
                 <a href="https://github.com/Jaskeeratr" target="_blank" rel="noreferrer">
                   github.com/Jaskeeratr
@@ -177,9 +178,11 @@ export default function ContactPage() {
 
             <div className="contact-actions">
               <button className="btn btn-primary" type="submit" disabled={isSubmitting}>
+                <Send size={17} aria-hidden="true" />
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
               <a className="btn btn-secondary" href="mailto:jaskeerat.rai@ucalgary.ca">
+                <Mail size={17} aria-hidden="true" />
                 Email Directly
               </a>
             </div>
