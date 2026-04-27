@@ -86,7 +86,7 @@ export default function ProjectDetailPage() {
                   Live Demo
                 </a>
               ) : (
-                <span className="repo-coming-soon">Live demo link will be added soon</span>
+                <span className="repo-coming-soon">Demo not public; repository and case study available</span>
               )}
               {project.repoUrl ? (
                 <a className="btn btn-secondary" href={project.repoUrl} target="_blank" rel="noreferrer">

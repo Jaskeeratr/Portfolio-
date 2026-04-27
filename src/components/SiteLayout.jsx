@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import ScrollChoreography from "./ScrollChoreography";
 import ScrollProgress from "./ScrollProgress";
+import SmoothScroll from "./SmoothScroll";
 
 export default function SiteLayout() {
   const location = useLocation();
@@ -13,6 +14,7 @@ export default function SiteLayout() {
     <>
       <AmbientBackdrop />
       <CustomCursor />
+      <SmoothScroll />
       <ScrollProgress />
       <ScrollChoreography />
       <div key={`route-wipe-${location.pathname}`} className="route-wipe" aria-hidden="true" />

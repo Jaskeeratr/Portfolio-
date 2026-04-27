@@ -1,30 +1,15 @@
-import { useEffect, useState } from "react";
+import { lazy, Suspense } from "react";
 import { ArrowRight, FileText, Mail, RadioTower } from "lucide-react";
 import { Link } from "react-router-dom";
-import ProjectVisual from "../components/ProjectVisual";
+import KineticRoleText from "../components/KineticRoleText";
+import PinnedProjectStory from "../components/PinnedProjectStory";
 import Reveal from "../components/Reveal";
-import TiltCard from "../components/TiltCard";
 import { projects } from "../data/projects";
 import { recruiterHighlights, skillGroups, statCards } from "../data/siteContent";
 
-const rotatingRoles = [
-  "Data Engineering",
-  "Full-Stack Development",
-  "Backend Systems",
-  "AI Product Integration"
-];
+const HeroSystemScene = lazy(() => import("../components/HeroSystemScene"));
 
 export default function HomePage() {
-  const [roleIndex, setRoleIndex] = useState(0);
-  const featuredProjects = projects.slice(0, 3);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setRoleIndex((index) => (index + 1) % rotatingRoles.length);
-    }, 2500);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <div className="home-pro">
       <section className="section page-shell home-pro-hero">
@@ -33,13 +18,22 @@ export default function HomePage() {
             <p className="eyebrow">Software Engineering Student | University of Calgary</p>
             <h1>Jaskeerat Rai</h1>
             <p className="home-pro-role">
-              Specializing in <strong>{rotatingRoles[roleIndex]}</strong>
+              Building <KineticRoleText />
+            </p>
+            <p className="home-pro-positioning">
+              Software engineering student building reliable data-heavy systems. Seeking Summer
+              2026 software, backend, data engineering, or ML co-op roles.
             </p>
             <p className="home-pro-lead">
-              I build production-ready software and data systems that solve real business
-              problems. I am actively pursuing a <strong>Summer 2026 co-op</strong> in software
-              development, data engineering, or analytics.
+              I build production-grade pipelines, APIs, automation, and full-stack products with
+              clear proof: validated data, shipped systems, measured speedups, and model lift.
             </p>
+            <div className="hero-proof-chips" aria-label="Proof points">
+              <span>500K+ records/run</span>
+              <span>3 production systems</span>
+              <span>66.8% ML accuracy</span>
+              <span>1,000+ QA outputs</span>
+            </div>
             <div className="home-pro-actions">
               <Link className="btn btn-primary" to="/projects">
                 <RadioTower size={17} aria-hidden="true" />
@@ -61,6 +55,9 @@ export default function HomePage() {
               <a href="https://www.linkedin.com/in/jaskeeratr22/" target="_blank" rel="noreferrer">
                 LinkedIn
               </a>
+              <a href="https://github.com/Jaskeeratr" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
             </div>
           </Reveal>
 
@@ -68,6 +65,9 @@ export default function HomePage() {
             <div className="home-pro-scene">
               <div className="home-pro-layer home-pro-layer-back" />
               <div className="home-pro-layer home-pro-layer-mid" />
+              <Suspense fallback={null}>
+                <HeroSystemScene />
+              </Suspense>
               <img
                 className="home-pro-scene-image"
                 src="/images/hero-illustration.svg"
@@ -109,46 +109,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section home-pro-projects">
-        <div className="container">
-          <Reveal className="home-pro-section-head">
-            <p className="eyebrow">Featured Work</p>
-            <h2>Portfolio projects with architecture and measurable outcomes.</h2>
-          </Reveal>
-
-          <div className="home-pro-project-grid">
-            {featuredProjects.map((project, index) => (
-              <Reveal key={project.slug} delay={index * 90}>
-                <TiltCard className="home-pro-project-card" strength={5}>
-                  <ProjectVisual project={project} />
-                  <div className="home-pro-project-body">
-                    <h3>{project.name}</h3>
-                    <p>{project.tagline}</p>
-                    <p className="stack">{project.stack.join(" | ")}</p>
-                    <div className="home-pro-project-actions">
-                      <Link className="btn btn-secondary" to={`/projects/${project.slug}`}>
-                        <ArrowRight size={16} aria-hidden="true" />
-                        View Project
-                      </Link>
-                      {project.demoUrl ? (
-                        <a className="btn btn-primary" href={project.demoUrl} target="_blank" rel="noreferrer">
-                          <RadioTower size={16} aria-hidden="true" />
-                          Live Demo
-                        </a>
-                      ) : (
-                        <a className="btn btn-primary" href={project.repoUrl} target="_blank" rel="noreferrer">
-                          <ArrowRight size={16} aria-hidden="true" />
-                          Repository
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </TiltCard>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      <PinnedProjectStory projects={projects} />
 
       <section className="section home-pro-focus">
         <div className="container home-pro-focus-grid">

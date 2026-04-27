@@ -1,0 +1,254 @@
+- generic [ref=e2]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - link "JR." [ref=e8]:
+        - /url: /
+      - button "Toggle navigation" [ref=e9]
+      - navigation:
+        - link "Home":
+          - /url: /
+        - link "Projects":
+          - /url: /projects
+        - link "Experience":
+          - /url: /experience
+        - link "Contact":
+          - /url: /contact
+        - link "Resume":
+          - /url: /resume/Jaskeerat-Rai-Resume.pdf
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/in/jaskeeratr22/
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - paragraph [ref=e18]: Software Engineering Student | University of Calgary
+          - heading "Jaskeerat Rai" [level=1] [ref=e19]
+          - paragraph [ref=e20]:
+            - text: Specializing in
+            - strong [ref=e21]: Data Engineering
+          - paragraph [ref=e22]:
+            - text: I build production-ready software and data systems that solve real business problems. I am actively pursuing a
+            - strong [ref=e23]: Summer 2026 co-op
+            - text: in software development, data engineering, or analytics.
+          - generic [ref=e24]:
+            - link "Explore Projects" [ref=e25]:
+              - /url: /projects
+              - img [ref=e26]
+              - text: Explore Projects
+            - link "View Resume" [ref=e33]:
+              - /url: /resume/Jaskeerat-Rai-Resume.pdf
+              - img [ref=e34]
+              - text: View Resume
+          - generic [ref=e37]:
+            - link "jaskeerat.rai@ucalgary.ca" [ref=e38]:
+              - /url: mailto:jaskeerat.rai@ucalgary.ca
+            - link "825-735-1377" [ref=e39]:
+              - /url: tel:+18257351377
+            - link "LinkedIn" [ref=e40]:
+              - /url: https://www.linkedin.com/in/jaskeeratr22/
+        - generic [ref=e42]:
+          - img "Data product dashboard visualization" [ref=e45]
+          - article [ref=e46]:
+            - heading "Production Delivery" [level=3] [ref=e47]
+            - paragraph [ref=e48]: Shipped full-stack products end-to-end with measurable impact.
+          - article [ref=e49]:
+            - heading "Pipeline Scale" [level=3] [ref=e50]
+            - paragraph [ref=e51]: Automated ETL workflows processing 500K+ records per monthly cycle.
+          - generic [ref=e52]:
+            - generic [ref=e53]: pipeline.run()
+            - generic [ref=e54]: score.match = 92%
+            - generic [ref=e55]: deploy.status = live
+      - generic [ref=e58]:
+        - article [ref=e60]:
+          - paragraph [ref=e61]: 500K+
+          - paragraph [ref=e62]: Records processed per ETL run
+        - article [ref=e64]:
+          - paragraph [ref=e65]: 30%
+          - paragraph [ref=e66]: Page-load improvement shipped
+        - article [ref=e68]:
+          - paragraph [ref=e69]: 1000+
+          - paragraph [ref=e70]: AI outputs evaluated
+        - article [ref=e72]:
+          - paragraph [ref=e73]: 66.8%
+          - paragraph [ref=e74]: Model accuracy
+      - region "One engineering foundation branching into focused product worlds." [ref=e75]:
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - paragraph [ref=e79]: Project Story System
+            - heading "One engineering foundation branching into focused product worlds." [level=2] [ref=e80]
+            - paragraph [ref=e81]: "Scroll through the system: matching intelligence, data infrastructure, product UX, and machine learning all connect back to measurable software delivery."
+            - link "Explore Case Studies" [ref=e82]:
+              - /url: /projects
+              - img [ref=e83]
+              - text: Explore Case Studies
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - figure [ref=e87]:
+                - img [ref=e88]
+              - generic [ref=e89]:
+                - strong [ref=e90]: Match
+                - generic [ref=e91]: GapCheck
+            - generic [ref=e92]:
+              - figure [ref=e93]:
+                - img [ref=e94]
+              - generic [ref=e95]:
+                - strong [ref=e96]: Pipeline
+                - generic [ref=e97]: Alberta Energy Data Pipeline
+            - generic [ref=e98]:
+              - figure [ref=e99]:
+                - img [ref=e100]
+              - generic [ref=e101]:
+                - strong [ref=e102]: Product
+                - generic [ref=e103]: Macro Finder
+            - generic [ref=e104]:
+              - figure [ref=e105]:
+                - img [ref=e106]
+              - generic [ref=e107]:
+                - strong [ref=e108]: Predict
+                - generic [ref=e109]: Premier League Match Predictor
+          - generic [ref=e110]:
+            - article [ref=e111]:
+              - text: "01"
+              - heading "GapCheck" [level=3] [ref=e112]
+              - paragraph [ref=e113]: AI-powered internship matching and resume gap analysis platform
+            - article [ref=e114]:
+              - text: "02"
+              - heading "Alberta Energy Data Pipeline" [level=3] [ref=e115]
+              - paragraph [ref=e116]: Automated ETL and analytics stack for large-scale production datasets
+            - article [ref=e117]:
+              - text: "03"
+              - heading "Macro Finder" [level=3] [ref=e118]
+              - paragraph [ref=e119]: Personalized full-stack nutrition app with scalable meal tracking
+            - article [ref=e120]:
+              - text: "04"
+              - heading "Premier League Match Predictor" [level=3] [ref=e121]
+              - paragraph [ref=e122]: End-to-end ML pipeline for high-variance sports outcomes
+      - generic [ref=e124]:
+        - generic [ref=e125]:
+          - paragraph [ref=e126]: Featured Work
+          - heading "Portfolio projects with architecture and measurable outcomes." [level=2] [ref=e127]
+        - generic [ref=e128]:
+          - article [ref=e130]:
+            - figure [ref=e131]:
+              - img "Abstract dashboard showing resume parsing, internship cards, and AI match scoring for GapCheck" [ref=e132]
+            - generic [ref=e133]:
+              - heading "GapCheck" [level=3] [ref=e134]
+              - paragraph [ref=e135]: AI-powered internship matching and resume gap analysis platform
+              - paragraph [ref=e136]: React | FastAPI | PostgreSQL | Claude API | Apache Airflow
+              - generic [ref=e137]:
+                - link "View Project" [ref=e138]:
+                  - /url: /projects/gapcheck
+                  - img [ref=e139]
+                  - text: View Project
+                - link "Live Demo" [ref=e141]:
+                  - /url: https://gapcheck-1.onrender.com
+                  - img [ref=e142]
+                  - text: Live Demo
+          - article [ref=e150]:
+            - figure [ref=e151]:
+              - img "Abstract ETL pipeline with raw energy data, Airflow orchestration, and analytics dashboard panels" [ref=e152]
+            - generic [ref=e153]:
+              - heading "Alberta Energy Data Pipeline" [level=3] [ref=e154]
+              - paragraph [ref=e155]: Automated ETL and analytics stack for large-scale production datasets
+              - paragraph [ref=e156]: Python | Apache Airflow | PostgreSQL | Power BI | Docker
+              - generic [ref=e157]:
+                - link "View Project" [ref=e158]:
+                  - /url: /projects/alberta-energy-data-pipeline
+                  - img [ref=e159]
+                  - text: View Project
+                - link "Repository" [ref=e161]:
+                  - /url: https://github.com/Jaskeeratr/alberta-energy-pipeline
+                  - img [ref=e162]
+                  - text: Repository
+          - article [ref=e165]:
+            - figure [ref=e166]:
+              - img "Premium nutrition app visual with macro cards, food labels, meal tracking, and mobile UI panels" [ref=e167]
+            - generic [ref=e168]:
+              - heading "Macro Finder" [level=3] [ref=e169]
+              - paragraph [ref=e170]: Personalized full-stack nutrition app with scalable meal tracking
+              - paragraph [ref=e171]: React | Node.js | PostgreSQL
+              - generic [ref=e172]:
+                - link "View Project" [ref=e173]:
+                  - /url: /projects/macro-finder
+                  - img [ref=e174]
+                  - text: View Project
+                - link "Repository" [ref=e176]:
+                  - /url: https://csgit.ucalgary.ca/jashan.bhinder/seng513-202601-pg-17
+                  - img [ref=e177]
+                  - text: Repository
+      - generic [ref=e180]:
+        - generic [ref=e181]:
+          - paragraph [ref=e182]: How I Work
+          - heading "Reliable execution, clear communication, and measurable delivery." [level=2] [ref=e183]
+          - list [ref=e184]:
+            - listitem [ref=e185]:
+              - heading "Fast Shipping" [level=3] [ref=e186]
+              - paragraph [ref=e187]: Delivered multiple production systems across internships and project teams.
+            - listitem [ref=e188]:
+              - heading "Data Reliability" [level=3] [ref=e189]
+              - paragraph [ref=e190]: Built validation-first pipelines with auditability and measurable quality controls.
+            - listitem [ref=e191]:
+              - heading "Product Thinking" [level=3] [ref=e192]
+              - paragraph [ref=e193]: Designs technical solutions with user value, clarity, and real-world constraints.
+        - generic [ref=e194]:
+          - paragraph [ref=e195]: Technical Stack
+          - heading "Cross-stack capability map." [level=2] [ref=e196]
+          - generic [ref=e197]:
+            - article [ref=e198]:
+              - heading "Languages" [level=3] [ref=e199]
+              - generic [ref=e200]:
+                - generic [ref=e201]: Python
+                - generic [ref=e202]: JavaScript
+                - generic [ref=e203]: TypeScript
+                - generic [ref=e204]: SQL
+                - generic [ref=e205]: C++
+                - generic [ref=e206]: C
+            - article [ref=e207]:
+              - heading "Frontend" [level=3] [ref=e208]
+              - generic [ref=e209]:
+                - generic [ref=e210]: React
+                - generic [ref=e211]: HTML5
+                - generic [ref=e212]: CSS3
+                - generic [ref=e213]: Tailwind CSS
+            - article [ref=e214]:
+              - heading "Backend" [level=3] [ref=e215]
+              - generic [ref=e216]:
+                - generic [ref=e217]: Node.js
+                - generic [ref=e218]: FastAPI
+                - generic [ref=e219]: Express
+                - generic [ref=e220]: REST APIs
+            - article [ref=e221]:
+              - heading "Data and AI" [level=3] [ref=e222]
+              - generic [ref=e223]:
+                - generic [ref=e224]: Apache Airflow
+                - generic [ref=e225]: PostgreSQL
+                - generic [ref=e226]: MySQL
+                - generic [ref=e227]: Snowflake
+                - generic [ref=e228]: Pandas
+                - generic [ref=e229]: NumPy
+                - generic [ref=e230]: Power BI
+                - generic [ref=e231]: Claude API
+                - generic [ref=e232]: Docker
+                - generic [ref=e233]: AWS S3
+                - generic [ref=e234]: Git
+      - generic [ref=e237]:
+        - paragraph [ref=e238]: Open to Opportunities
+        - heading "Looking for Summer 2026 co-op roles." [level=2] [ref=e239]
+        - paragraph [ref=e240]: If your team is building data-heavy or product-focused systems, I would love to contribute.
+        - generic [ref=e241]:
+          - link "Contact Me" [ref=e242]:
+            - /url: /contact
+            - img [ref=e243]
+            - text: Contact Me
+          - link "View Experience" [ref=e246]:
+            - /url: /experience
+            - img [ref=e247]
+            - text: View Experience
+  - contentinfo [ref=e249]:
+    - generic [ref=e250]:
+      - paragraph [ref=e251]: © 2026 Jaskeerat Rai. Built for impact.
+      - generic [ref=e252]:
+        - link "LinkedIn" [ref=e253]:
+          - /url: https://www.linkedin.com/in/jaskeeratr22/
+        - link "GitHub" [ref=e254]:
+          - /url: https://github.com/Jaskeeratr

@@ -3,7 +3,7 @@ export const projects = [
     slug: "gapcheck",
     name: "GapCheck",
     tagline: "AI-powered internship matching and resume gap analysis platform",
-    stack: ["React", "FastAPI", "PostgreSQL", "Claude API", "Apache Airflow"],
+    stack: ["React", "TypeScript", "FastAPI", "PostgreSQL", "Anthropic API", "Apache Airflow", "Docker"],
     image: "/images/gapcheck.svg",
     storyImage: "/images/projects/gapcheck.svg",
     storyImageAlt:
@@ -12,6 +12,9 @@ export const projects = [
     repoUrl: "https://github.com/Jaskeeratr/gapcheck",
     demoUrl: "https://gapcheck-1.onrender.com",
     caseStudyPdf: "/case-studies/gapcheck-case-study.pdf",
+    myRole: "Full-stack product engineer",
+    whyItMatters: "Cuts internship search noise into ranked, explainable application targets.",
+    proofNote: "100+ postings/day with deduplication and 5-dimension fit scoring.",
     summary:
       "Built and deployed a full-stack platform that aggregates internship listings and evaluates candidate-job fit using weighted scoring and LLM-assisted reasoning.",
     resultsSnapshot: [
@@ -51,7 +54,7 @@ export const projects = [
     slug: "alberta-energy-data-pipeline",
     name: "Alberta Energy Data Pipeline",
     tagline: "Automated ETL and analytics stack for large-scale production datasets",
-    stack: ["Python", "Apache Airflow", "PostgreSQL", "Power BI", "Docker"],
+    stack: ["Python", "Apache Airflow", "PostgreSQL", "Power BI", "Docker", "AWS S3"],
     image: "/images/alberta-pipeline.svg",
     storyImage: "/images/projects/alberta-energy-pipeline.svg",
     storyImageAlt:
@@ -60,6 +63,9 @@ export const projects = [
     repoUrl: "https://github.com/Jaskeeratr/alberta-energy-pipeline",
     demoUrl: null,
     caseStudyPdf: "/case-studies/alberta-energy-pipeline-case-study.pdf",
+    myRole: "Data pipeline engineer",
+    whyItMatters: "Turns inconsistent regulator data into queryable, trusted analytics tables.",
+    proofNote: "500K+ rows/run, 33K invalid rows removed, 70% faster analytical queries.",
     summary:
       "Engineered an end-to-end ETL pipeline for Alberta Energy Regulator production data with robust validation, indexing, and dashboarding.",
     resultsSnapshot: [
@@ -108,6 +114,9 @@ export const projects = [
     repoUrl: "https://csgit.ucalgary.ca/jashan.bhinder/seng513-202601-pg-17",
     demoUrl: null,
     caseStudyPdf: "/case-studies/macro-finder-case-study.pdf",
+    myRole: "Full-stack developer",
+    whyItMatters: "Moves nutrition tracking from one-off calculators into a persistent product workflow.",
+    proofNote: "Responsive profile, macro calculation, and meal history flows.",
     summary:
       "Developed a responsive nutrition platform that calculates personalized macro targets based on goals, activity, and dietary preferences.",
     resultsSnapshot: [
@@ -144,9 +153,9 @@ export const projects = [
   },
   {
     slug: "premier-league-predictor",
-    name: "Premier League Match Predictor",
-    tagline: "End-to-end ML pipeline for high-variance sports outcomes",
-    stack: ["Python", "Scikit-learn", "SQL"],
+    name: "Multi-Sport Match Outcome Predictor",
+    tagline: "Adaptive ML pipeline for high-variance sports outcomes",
+    stack: ["Python", "Flask", "Scikit-learn", "SQLite", "REST API"],
     image: "/images/epl-predictor.svg",
     storyImage: "/images/projects/premier-league-predictor.svg",
     storyImageAlt:
@@ -155,27 +164,31 @@ export const projects = [
     repoUrl: "https://github.com/Jaskeeratr/Premier-predictor",
     demoUrl: null,
     caseStudyPdf: "/case-studies/premier-league-predictor-case-study.pdf",
+    myRole: "ML systems builder",
+    whyItMatters: "Shows measurable predictive lift while keeping model behavior explainable.",
+    proofNote: "1,140+ matches, 20+ engineered features, adaptive retraining, scenario simulation.",
     summary:
-      "Built a machine learning pipeline that predicts Premier League match outcomes using engineered historical features and optimized SQL extraction.",
+      "Built a Flask-backed machine learning system that predicts match outcomes using engineered historical features, stored history, adaptive retraining, and scenario simulation.",
     resultsSnapshot: [
       { value: "66.8%", label: "Model Accuracy", note: "On noisy real-world outcome data" },
       { value: "+17%", label: "Lift vs Baseline", note: "Outperformed naive predictor" },
-      { value: "20+", label: "Engineered Features", note: "Performance and match-context features" }
+      { value: "1,140+", label: "Matches Modeled", note: "Historical examples across prediction workflows" }
     ],
     highlights: [
       "Achieved 66.8% prediction accuracy",
       "Outperformed naive baseline by 17%",
       "Engineered 20+ performance-driven features",
-      "Reduced SQL extraction time by 22% on 10K+ records"
+      "Added adaptive retraining and scenario simulation workflows"
     ],
     problem:
       "Sports outcomes are noisy, making it hard to produce meaningful predictive lift over baseline assumptions.",
     solution:
       "Constructed robust feature pipelines and model evaluation loops that improve signal extraction and benchmark transparently against baseline.",
     architecture: [
-      "SQL feature extraction from historical match and team data",
-      "Python preprocessing and training workflow with reproducible experiments",
+      "SQLite-backed match history and prediction persistence",
+      "Flask REST API for prediction, history, and scenario simulation flows",
       "Scikit-learn modeling and evaluation pipeline",
+      "Python preprocessing and training workflow with reproducible experiments",
       "Performance tracking against naive and tuned benchmark models"
     ],
     challengesTradeoffs: [

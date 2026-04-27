@@ -25,6 +25,10 @@ export default function ProjectCard({ project }) {
       <div className="project-body">
         <h3>{project.name}</h3>
         <p className="stack">{project.stack.join(" | ")}</p>
+        <div className="project-role-proof">
+          <span>My role: {project.myRole}</span>
+          <span>{project.whyItMatters}</span>
+        </div>
         <p>{project.summary}</p>
         <ul>
           {project.highlights.slice(0, 2).map((item) => (

@@ -1,0 +1,245 @@
+- generic [ref=e2]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - link "JR." [ref=e8]:
+        - /url: /
+      - navigation [ref=e9]:
+        - link "Home" [ref=e10]:
+          - /url: /
+        - link "Projects" [ref=e11]:
+          - /url: /projects
+        - link "Experience" [ref=e12]:
+          - /url: /experience
+        - link "Contact" [ref=e13]:
+          - /url: /contact
+        - link "Resume" [ref=e14]:
+          - /url: /resume/Jaskeerat-Rai-Resume.pdf
+        - link "LinkedIn" [ref=e15]:
+          - /url: https://www.linkedin.com/in/jaskeeratr22/
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - paragraph [ref=e21]: Software Engineering Student | University of Calgary
+          - heading "Jaskeerat Rai" [level=1] [ref=e22]
+          - paragraph [ref=e23]:
+            - text: Building
+            - strong [ref=e25]: data-heavy full-stack products
+          - paragraph [ref=e26]: Software engineering student building reliable data-heavy systems. Seeking Summer 2026 software, backend, data engineering, or ML co-op roles.
+          - paragraph [ref=e27]: "I build production-grade pipelines, APIs, automation, and full-stack products with clear proof: validated data, shipped systems, measured speedups, and model lift."
+          - generic "Proof points" [ref=e28]:
+            - generic [ref=e29]: 500K+ records/run
+            - generic [ref=e30]: 3 production systems
+            - generic [ref=e31]: 66.8% ML accuracy
+            - generic [ref=e32]: 1,000+ QA outputs
+          - generic [ref=e33]:
+            - link "Explore Projects" [ref=e34]:
+              - /url: /projects
+              - img [ref=e35]
+              - text: Explore Projects
+            - link "View Resume" [ref=e42]:
+              - /url: /resume/Jaskeerat-Rai-Resume.pdf
+              - img [ref=e43]
+              - text: View Resume
+          - generic [ref=e46]:
+            - link "jaskeerat.rai@ucalgary.ca" [ref=e47]:
+              - /url: mailto:jaskeerat.rai@ucalgary.ca
+            - link "825-735-1377" [ref=e48]:
+              - /url: tel:+18257351377
+            - link "LinkedIn" [ref=e49]:
+              - /url: https://www.linkedin.com/in/jaskeeratr22/
+            - link "GitHub" [ref=e50]:
+              - /url: https://github.com/Jaskeeratr
+        - generic [ref=e52]:
+          - img "Data product dashboard visualization" [ref=e55]
+          - article [ref=e56]:
+            - heading "Production Delivery" [level=3] [ref=e57]
+            - paragraph [ref=e58]: Shipped full-stack products end-to-end with measurable impact.
+          - article [ref=e59]:
+            - heading "Pipeline Scale" [level=3] [ref=e60]
+            - paragraph [ref=e61]: Automated ETL workflows processing 500K+ records per monthly cycle.
+          - generic [ref=e62]:
+            - generic [ref=e63]: pipeline.run()
+            - generic [ref=e64]: score.match = 92%
+            - generic [ref=e65]: deploy.status = live
+      - generic [ref=e68]:
+        - article [ref=e70]:
+          - paragraph [ref=e71]: 500K+
+          - paragraph [ref=e72]: Records processed per ETL run
+        - article [ref=e74]:
+          - paragraph [ref=e75]: 30%
+          - paragraph [ref=e76]: Page-load improvement shipped
+        - article [ref=e78]:
+          - paragraph [ref=e79]: 1000+
+          - paragraph [ref=e80]: AI outputs evaluated
+        - article [ref=e82]:
+          - paragraph [ref=e83]: 66.8%
+          - paragraph [ref=e84]: Model accuracy
+      - region "Production systems, not toy projects." [ref=e85]:
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - paragraph [ref=e90]: Core Signal
+            - heading "Production systems, not toy projects." [level=2] [ref=e91]
+            - paragraph [ref=e92]: "Scroll through the work as a systems map: ingestion, APIs, validation, model signals, product UX, and measured outcomes."
+            - generic [ref=e93]:
+              - button [ref=e94]
+              - button [ref=e95]
+              - button [ref=e96]
+              - button [ref=e97]
+          - article [ref=e98]:
+            - generic [ref=e99]: 01 / 4
+            - heading "GapCheck" [level=3] [ref=e100]
+            - paragraph [ref=e101]: AI-powered internship matching and resume gap analysis platform
+            - generic [ref=e102]:
+              - generic [ref=e103]:
+                - strong [ref=e104]: 100+
+                - text: Listings Aggregated Daily
+              - generic [ref=e105]:
+                - strong [ref=e106]: "5"
+                - text: Scoring Dimensions
+              - generic [ref=e107]:
+                - strong [ref=e108]: "3"
+                - text: Verdict Classes
+            - generic [ref=e109]:
+              - generic [ref=e110]: "My role: Full-stack product engineer"
+              - generic [ref=e111]: Cuts internship search noise into ranked, explainable application targets.
+            - generic [ref=e112]:
+              - link "Case Study" [ref=e113]:
+                - /url: /projects/gapcheck
+                - img [ref=e114]
+                - text: Case Study
+              - link "Live Demo" [ref=e116]:
+                - /url: https://gapcheck-1.onrender.com
+                - img [ref=e117]
+                - text: Live Demo
+          - figure [ref=e122]:
+            - img "Abstract dashboard showing resume parsing, internship cards, and AI match scoring for GapCheck" [ref=e123]
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - paragraph [ref=e127]: Featured Work
+          - heading "Portfolio projects with architecture and measurable outcomes." [level=2] [ref=e128]
+        - generic [ref=e129]:
+          - article [ref=e131]:
+            - figure [ref=e132]:
+              - img "Abstract dashboard showing resume parsing, internship cards, and AI match scoring for GapCheck" [ref=e133]
+            - generic [ref=e134]:
+              - heading "GapCheck" [level=3] [ref=e135]
+              - paragraph [ref=e136]: AI-powered internship matching and resume gap analysis platform
+              - paragraph [ref=e137]: React | TypeScript | FastAPI | PostgreSQL | Anthropic API | Apache Airflow | Docker
+              - generic [ref=e138]:
+                - link "View Project" [ref=e139]:
+                  - /url: /projects/gapcheck
+                  - img [ref=e140]
+                  - text: View Project
+                - link "Live Demo" [ref=e143]:
+                  - /url: https://gapcheck-1.onrender.com
+                  - img [ref=e144]
+                  - text: Live Demo
+          - article [ref=e153]:
+            - figure [ref=e154]:
+              - img "Abstract ETL pipeline with raw energy data, Airflow orchestration, and analytics dashboard panels" [ref=e155]
+            - generic [ref=e156]:
+              - heading "Alberta Energy Data Pipeline" [level=3] [ref=e157]
+              - paragraph [ref=e158]: Automated ETL and analytics stack for large-scale production datasets
+              - paragraph [ref=e159]: Python | Apache Airflow | PostgreSQL | Power BI | Docker | AWS S3
+              - generic [ref=e160]:
+                - link "View Project" [ref=e161]:
+                  - /url: /projects/alberta-energy-data-pipeline
+                  - img [ref=e162]
+                  - text: View Project
+                - link "Repository" [ref=e165]:
+                  - /url: https://github.com/Jaskeeratr/alberta-energy-pipeline
+                  - img [ref=e166]
+                  - text: Repository
+          - article [ref=e170]:
+            - figure [ref=e171]:
+              - img "Premium nutrition app visual with macro cards, food labels, meal tracking, and mobile UI panels" [ref=e172]
+            - generic [ref=e173]:
+              - heading "Macro Finder" [level=3] [ref=e174]
+              - paragraph [ref=e175]: Personalized full-stack nutrition app with scalable meal tracking
+              - paragraph [ref=e176]: React | Node.js | PostgreSQL
+              - generic [ref=e177]:
+                - link "View Project" [ref=e178]:
+                  - /url: /projects/macro-finder
+                  - img [ref=e179]
+                  - text: View Project
+                - link "Repository" [ref=e182]:
+                  - /url: https://csgit.ucalgary.ca/jashan.bhinder/seng513-202601-pg-17
+                  - img [ref=e183]
+                  - text: Repository
+      - generic [ref=e187]:
+        - generic [ref=e188]:
+          - paragraph [ref=e189]: How I Work
+          - heading "Reliable execution, clear communication, and measurable delivery." [level=2] [ref=e190]
+          - list [ref=e191]:
+            - listitem [ref=e192]:
+              - heading "Fast Shipping" [level=3] [ref=e193]
+              - paragraph [ref=e194]: Delivered multiple production systems across internships and project teams.
+            - listitem [ref=e195]:
+              - heading "Data Reliability" [level=3] [ref=e196]
+              - paragraph [ref=e197]: Built validation-first pipelines with auditability and measurable quality controls.
+            - listitem [ref=e198]:
+              - heading "Product Thinking" [level=3] [ref=e199]
+              - paragraph [ref=e200]: Designs technical solutions with user value, clarity, and real-world constraints.
+        - generic [ref=e201]:
+          - paragraph [ref=e202]: Technical Stack
+          - heading "Cross-stack capability map." [level=2] [ref=e203]
+          - generic [ref=e204]:
+            - article [ref=e205]:
+              - heading "Languages" [level=3] [ref=e206]
+              - generic [ref=e207]:
+                - generic [ref=e208]: Python
+                - generic [ref=e209]: JavaScript
+                - generic [ref=e210]: TypeScript
+                - generic [ref=e211]: SQL
+                - generic [ref=e212]: C++
+                - generic [ref=e213]: C
+            - article [ref=e214]:
+              - heading "Frontend" [level=3] [ref=e215]
+              - generic [ref=e216]:
+                - generic [ref=e217]: React
+                - generic [ref=e218]: HTML5
+                - generic [ref=e219]: CSS3
+                - generic [ref=e220]: Tailwind CSS
+            - article [ref=e221]:
+              - heading "Backend" [level=3] [ref=e222]
+              - generic [ref=e223]:
+                - generic [ref=e224]: Node.js
+                - generic [ref=e225]: FastAPI
+                - generic [ref=e226]: Express
+                - generic [ref=e227]: REST APIs
+            - article [ref=e228]:
+              - heading "Data and AI" [level=3] [ref=e229]
+              - generic [ref=e230]:
+                - generic [ref=e231]: Apache Airflow
+                - generic [ref=e232]: PostgreSQL
+                - generic [ref=e233]: MySQL
+                - generic [ref=e234]: Snowflake
+                - generic [ref=e235]: Pandas
+                - generic [ref=e236]: NumPy
+                - generic [ref=e237]: Power BI
+                - generic [ref=e238]: Claude API
+                - generic [ref=e239]: Docker
+                - generic [ref=e240]: AWS S3
+                - generic [ref=e241]: Git
+      - generic [ref=e244]:
+        - paragraph [ref=e245]: Open to Opportunities
+        - heading "Looking for Summer 2026 co-op roles." [level=2] [ref=e246]
+        - paragraph [ref=e247]: If your team is building data-heavy or product-focused systems, I would love to contribute.
+        - generic [ref=e248]:
+          - link "Contact Me" [ref=e249]:
+            - /url: /contact
+            - img [ref=e250]
+            - text: Contact Me
+          - link "View Experience" [ref=e253]:
+            - /url: /experience
+            - img [ref=e254]
+            - text: View Experience
+  - contentinfo [ref=e256]:
+    - generic [ref=e257]:
+      - paragraph [ref=e258]: © 2026 Jaskeerat Rai. Built for impact.
+      - generic [ref=e259]:
+        - link "LinkedIn" [ref=e260]:
+          - /url: https://www.linkedin.com/in/jaskeeratr22/
+        - link "GitHub" [ref=e261]:
+          - /url: https://github.com/Jaskeeratr
