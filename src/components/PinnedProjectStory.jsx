@@ -1,11 +1,13 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight, Code2, ExternalLink } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import ProjectVisual from "./ProjectVisual";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const ProjectWorldScene = lazy(() => import("./ProjectWorldScene"));
 
 const clamp01 = (value) => Math.min(Math.max(value, 0), 1);
 
@@ -129,6 +131,9 @@ export default function PinnedProjectStory({ projects }) {
               to={`/projects/${activeProject.slug}`}
               aria-label={`Open ${activeProject.name} case study`}
             >
+              <Suspense fallback={null}>
+                <ProjectWorldScene project={activeProject} />
+              </Suspense>
               <ProjectVisual project={activeProject} />
               <span>{activeProject.name}</span>
             </Link>

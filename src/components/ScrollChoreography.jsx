@@ -40,7 +40,7 @@ export default function ScrollChoreography() {
       );
       root.style.setProperty(
         "--project-story-scroll",
-        sectionProgress(".home-pro-projects, .projects-story-page", viewportHeight).toFixed(4)
+        sectionProgress(".pinned-story, .home-pro-projects, .projects-story-page", viewportHeight).toFixed(4)
       );
       root.style.setProperty(
         "--timeline-scroll",

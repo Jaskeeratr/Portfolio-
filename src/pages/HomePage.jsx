@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import KineticRoleText from "../components/KineticRoleText";
 import PinnedProjectStory from "../components/PinnedProjectStory";
 import Reveal from "../components/Reveal";
+import SkillsConstellation from "../components/SkillsConstellation";
 import { projects } from "../data/projects";
 import { recruiterHighlights, skillGroups, statCards } from "../data/siteContent";
 
-const HeroSystemScene = lazy(() => import("../components/HeroSystemScene"));
+const CinematicHeroScene = lazy(() => import("../components/CinematicHeroScene"));
 
 export default function HomePage() {
   return (
@@ -21,8 +22,8 @@ export default function HomePage() {
               Building <KineticRoleText />
             </p>
             <p className="home-pro-positioning">
-              Software engineering student building reliable data-heavy systems. Seeking Summer
-              2026 software, backend, data engineering, or ML co-op roles.
+              I design and build intelligent systems that feel interactive, polished, and alive.
+              Seeking Summer 2026 software, backend, data engineering, or ML co-op roles.
             </p>
             <p className="home-pro-lead">
               I build production-grade pipelines, APIs, automation, and full-stack products with
@@ -66,7 +67,7 @@ export default function HomePage() {
               <div className="home-pro-layer home-pro-layer-back" />
               <div className="home-pro-layer home-pro-layer-mid" />
               <Suspense fallback={null}>
-                <HeroSystemScene />
+                <CinematicHeroScene />
               </Suspense>
               <img
                 className="home-pro-scene-image"
@@ -129,18 +130,7 @@ export default function HomePage() {
           <Reveal className="home-pro-skills" delay={120}>
             <p className="eyebrow">Technical Stack</p>
             <h2>Cross-stack capability map.</h2>
-            <div className="home-pro-skill-groups">
-              {skillGroups.map((group) => (
-                <article key={group.title} className="home-pro-skill-group">
-                  <h3>{group.title}</h3>
-                  <div className="home-pro-chip-wrap">
-                    {group.items.map((item) => (
-                      <span key={item}>{item}</span>
-                    ))}
-                  </div>
-                </article>
-              ))}
-            </div>
+            <SkillsConstellation groups={skillGroups} />
           </Reveal>
         </div>
       </section>
