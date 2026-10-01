@@ -1,7 +1,6 @@
 import { ArrowRight, Code2, ExternalLink, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProjectVisual from "./ProjectVisual";
-import TiltCard from "./TiltCard";
 
 export default function ProjectCard({ project }) {
   function onCardMove(event) {
@@ -20,7 +19,7 @@ export default function ProjectCard({ project }) {
   }
 
   return (
-    <TiltCard className="project-card" onMouseMove={onCardMove} onMouseLeave={onCardLeave}>
+    <article className="project-card" onMouseMove={onCardMove} onMouseLeave={onCardLeave}>
       <ProjectVisual project={project} />
       <div className="project-body">
         <h3>{project.name}</h3>
@@ -50,9 +49,7 @@ export default function ProjectCard({ project }) {
               <ExternalLink size={16} aria-hidden="true" />
               Live Demo
             </a>
-          ) : (
-            <span className="repo-coming-soon">Live demo coming soon</span>
-          )}
+          ) : null}
           {project.repoUrl ? (
             <a
               className="btn btn-primary project-link"
@@ -64,7 +61,7 @@ export default function ProjectCard({ project }) {
               View Repository
             </a>
           ) : (
-            <span className="repo-coming-soon">Repository link coming soon</span>
+            <span className="repo-coming-soon">{project.status ?? "Repository link coming soon"}</span>
           )}
           {project.caseStudyPdf ? (
             <a
@@ -79,6 +76,6 @@ export default function ProjectCard({ project }) {
           ) : null}
         </div>
       </div>
-    </TiltCard>
+    </article>
   );
 }

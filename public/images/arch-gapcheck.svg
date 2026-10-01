@@ -1,31 +1,31 @@
 <svg width="1200" height="620" viewBox="0 0 1200 620" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="g" x1="90" y1="80" x2="1110" y2="560" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0E2A40"/>
-      <stop offset="1" stop-color="#091C2C"/>
+    <linearGradient id="g" x1="92" y1="82" x2="1100" y2="550" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F2B43"/>
+      <stop offset="1" stop-color="#081B2B"/>
     </linearGradient>
-    <linearGradient id="line" x1="174" y1="310" x2="1038" y2="310" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#23B2FF"/>
-      <stop offset="1" stop-color="#1EC8A5"/>
+    <linearGradient id="line" x1="164" y1="290" x2="1036" y2="290" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1EC8A5"/>
+      <stop offset="1" stop-color="#23B2FF"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="620" rx="28" fill="url(#g)"/>
-  <rect x="76" y="78" width="240" height="110" rx="16" fill="#12344F"/>
-  <rect x="342" y="78" width="240" height="110" rx="16" fill="#12344F"/>
-  <rect x="608" y="78" width="240" height="110" rx="16" fill="#12344F"/>
-  <rect x="874" y="78" width="240" height="110" rx="16" fill="#12344F"/>
-  <rect x="210" y="268" width="780" height="126" rx="20" fill="#112F47"/>
-  <rect x="334" y="434" width="532" height="108" rx="18" fill="#102A40"/>
-  <path d="M196 188V248" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
-  <path d="M462 188V248" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
-  <path d="M728 188V248" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
-  <path d="M994 188V248" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
-  <path d="M600 394V434" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
-  <text x="116" y="144" fill="#D5EBFA" font-family="Manrope, Segoe UI, Arial" font-size="24" font-weight="700">Job Sources</text>
-  <text x="380" y="144" fill="#D5EBFA" font-family="Manrope, Segoe UI, Arial" font-size="24" font-weight="700">Ingestion</text>
-  <text x="652" y="144" fill="#D5EBFA" font-family="Manrope, Segoe UI, Arial" font-size="24" font-weight="700">Scoring Engine</text>
-  <text x="944" y="144" fill="#D5EBFA" font-family="Manrope, Segoe UI, Arial" font-size="24" font-weight="700">LLM Analysis</text>
-  <text x="426" y="336" fill="#B8D9EE" font-family="Manrope, Segoe UI, Arial" font-size="26" font-weight="700">FastAPI + PostgreSQL Core Platform</text>
-  <text x="430" y="500" fill="#B7D9ED" font-family="Manrope, Segoe UI, Arial" font-size="24" font-weight="700">React Frontend Match Dashboard</text>
-  <text x="78" y="44" fill="#CFE6F7" font-family="Sora, Segoe UI, Arial" font-size="30" font-weight="700">GapCheck Architecture</text>
+  <rect x="78" y="90" width="234" height="120" rx="16" fill="#13354F"/>
+  <rect x="348" y="90" width="234" height="120" rx="16" fill="#13354F"/>
+  <rect x="618" y="90" width="234" height="120" rx="16" fill="#13354F"/>
+  <rect x="888" y="90" width="234" height="120" rx="16" fill="#13354F"/>
+  <rect x="98" y="252" width="1006" height="142" rx="22" fill="#112F48"/>
+  <rect x="296" y="430" width="610" height="110" rx="18" fill="#102A40"/>
+  <path d="M195 210V252" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M465 210V252" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M735 210V252" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1005 210V252" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M600 394V430" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+  <text x="195" y="158" fill="#D8ECFA" font-family="Manrope, Segoe UI, Arial" font-size="22" font-weight="700" text-anchor="middle">5 Job Sources</text>
+  <text x="465" y="158" fill="#D8ECFA" font-family="Manrope, Segoe UI, Arial" font-size="22" font-weight="700" text-anchor="middle">Resume Parser</text>
+  <text x="735" y="158" fill="#D8ECFA" font-family="Manrope, Segoe UI, Arial" font-size="22" font-weight="700" text-anchor="middle">Scoring Engine</text>
+  <text x="1005" y="158" fill="#D8ECFA" font-family="Manrope, Segoe UI, Arial" font-size="22" font-weight="700" text-anchor="middle">Gap Analysis</text>
+  <text x="600" y="332" fill="#BADBED" font-family="Manrope, Segoe UI, Arial" font-size="26" font-weight="700" text-anchor="middle">FastAPI + PostgreSQL Core Platform</text>
+  <text x="600" y="494" fill="#BADBED" font-family="Manrope, Segoe UI, Arial" font-size="24" font-weight="700" text-anchor="middle">React Dashboard + Project Recommendations</text>
+  <text x="78" y="52" fill="#CFE6F7" font-family="Sora, Segoe UI, Arial" font-size="30" font-weight="700">GapCheck Architecture</text>
 </svg>

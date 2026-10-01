@@ -1,79 +1,108 @@
 export const statCards = [
-  { value: 500, suffix: "K+", label: "Records processed per ETL run" },
-  { value: 30, suffix: "%", label: "Page-load improvement shipped" },
-  { value: 1000, suffix: "+", label: "AI outputs evaluated" },
-  { value: 66.8, suffix: "%", label: "Model accuracy", decimals: 1 }
+  { value: 59, suffix: "x", label: "Faster pitch analysis (717 ms to 12 ms)" },
+  { value: 66.8, suffix: "%", label: "Match-outcome accuracy over 1,140+ games", decimals: 1 },
+  { value: 1000, suffix: "+", label: "AI responses evaluated at Outlier" },
+  { value: 8.49, suffix: "x", label: "Source-data overstatement caught by audit", decimals: 2 }
 ];
 
 export const recruiterHighlights = [
   {
-    title: "Fast Shipping",
-    detail: "Delivered multiple production systems across internships and project teams."
+    title: "Ship the whole stack",
+    detail:
+      "Schema, API, UI, infrastructure, and CI, from my internship at Humility Kindness Love to GapCheck's Terraform deployment on AWS."
   },
   {
-    title: "Data Reliability",
-    detail: "Built validation-first pipelines with auditability and measurable quality controls."
+    title: "Back claims with evidence",
+    detail:
+      "Benchmarks, tests, and data-quality checks: 82 tests on SurSadhana, 47 on Underdog Manager, and idempotency proven in CI."
   },
   {
-    title: "Product Thinking",
-    detail: "Designs technical solutions with user value, clarity, and real-world constraints."
+    title: "Work well with people",
+    detail:
+      "Co-president of a 100+ member student association; turned non-technical stakeholder requests into working software."
   }
 ];
 
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["Python", "JavaScript", "TypeScript", "SQL", "C++", "C"]
+    items: ["Python", "SQL", "TypeScript", "JavaScript", "C++", "Java"]
   },
   {
-    title: "Frontend",
-    items: ["React", "HTML5", "CSS3", "Tailwind CSS"]
-  },
-  {
-    title: "Backend",
-    items: ["Node.js", "FastAPI", "Express", "REST APIs"]
-  },
-  {
-    title: "Data and AI",
+    title: "AI & LLMs",
     items: [
-      "Apache Airflow",
-      "PostgreSQL",
-      "MySQL",
-      "Snowflake",
-      "Pandas",
-      "NumPy",
-      "Power BI",
       "Claude API",
-      "Docker",
-      "AWS S3",
-      "Git"
+      "Prompt engineering",
+      "RAG pipelines",
+      "LLM evaluation",
+      "Agentic workflows",
+      "Structured output parsing"
     ]
+  },
+  {
+    title: "ML & Data",
+    items: [
+      "PyTorch",
+      "scikit-learn",
+      "pandas",
+      "NumPy",
+      "Feature engineering",
+      "Model evaluation",
+      "Signal processing"
+    ]
+  },
+  {
+    title: "Backend & Data Engineering",
+    items: [
+      "FastAPI",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Alembic",
+      "Apache Airflow",
+      "dbt",
+      "REST API design",
+      "ETL pipelines"
+    ]
+  },
+  {
+    title: "DevOps & Infrastructure",
+    items: [
+      "Terraform",
+      "AWS (ECS Fargate, RDS, ALB, VPC, IAM)",
+      "Docker",
+      "GitHub Actions",
+      "Trivy",
+      "tflint",
+      "Infracost"
+    ]
+  },
+  {
+    title: "Frontend & Visualization",
+    items: ["React", "TypeScript", "Tailwind CSS", "Recharts", "Power BI", "Three.js", "React Three Fiber"]
   }
 ];
 
 export const experiences = [
   {
-    role: "Web Developer Intern",
+    role: "Software Developer Intern",
     company: "Humility Kindness Love",
-    period: "Sep 2025 - Present",
+    period: "Sep 2025 - Apr 2026",
     location: "Remote",
     bullets: [
-      "Owned full-stack development of 3 web applications from architecture to deployment.",
-      "Designed RESTful APIs with normalized schemas for scalable and performant access.",
-      "Reduced average page load time by 30% using lazy loading and code splitting.",
-      "Translated ambiguous business requests into scoped, deliverable product features."
+      "Developed and maintained full-stack internal systems (FastAPI, PostgreSQL, Tailwind CSS, Docker Compose) for event operations, user submissions, admin workflows, and reporting.",
+      "Built REST API endpoints and backend logic that let non-technical stakeholders submit forms, track events, and generate accurate reports.",
+      "Added structured error handling and input validation to backend APIs, reducing recurring data-consistency issues in production."
     ]
   },
   {
     role: "AI Training Specialist",
     company: "Outlier (Contract)",
-    period: "Oct 2024 - Present",
+    period: "Oct 2024 - Dec 2025",
     location: "Remote",
     bullets: [
-      "Evaluated and refined 1,000+ AI-generated outputs across production pipelines.",
-      "Implemented structured quality protocols improving workflow quality by 20%.",
-      "Validated production Python and SQL code for correctness and edge-case coverage.",
-      "Collaborated with engineering and QA teams to reduce review cycle time."
+      "Evaluated 1,000+ AI-generated responses for coding, reasoning, SQL, and data-processing tasks against ground-truth criteria, reducing false-positive rates by 20% through documented failure-pattern analysis.",
+      "Reviewed Python scripts and SQLite queries to find and resolve errors and ambiguities, improving the reliability of LLM-assisted evaluation workflows.",
+      "Documented recurring LLM failure patterns (weak edge-case coverage, incorrect SQL logic, unsupported factual claims) to make evaluations more consistent."
     ]
   }
 ];

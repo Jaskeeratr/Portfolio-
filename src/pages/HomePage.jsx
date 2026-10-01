@@ -5,7 +5,7 @@ import KineticRoleText from "../components/KineticRoleText";
 import PinnedProjectStory from "../components/PinnedProjectStory";
 import Reveal from "../components/Reveal";
 import SkillsConstellation from "../components/SkillsConstellation";
-import { projects } from "../data/projects";
+import { featuredProjects } from "../data/projects";
 import { recruiterHighlights, skillGroups, statCards } from "../data/siteContent";
 
 const CinematicHeroScene = lazy(() => import("../components/CinematicHeroScene"));
@@ -15,25 +15,24 @@ export default function HomePage() {
     <div className="home-pro">
       <section className="section page-shell home-pro-hero">
         <div className="container home-pro-hero-grid">
-          <Reveal className="home-pro-copy" delay={60}>
-            <p className="eyebrow">Software Engineering Student | University of Calgary</p>
+          <Reveal className="home-pro-copy" eager>
+            <p className="eyebrow">4th-Year Software Engineering | University of Calgary | May 2028</p>
             <h1>Jaskeerat Rai</h1>
             <p className="home-pro-role">
               Building <KineticRoleText />
             </p>
             <p className="home-pro-positioning">
-              I design and build intelligent systems that feel interactive, polished, and alive.
-              Seeking Summer 2026 software, backend, data engineering, or ML co-op roles.
+              I build full-stack AI, ML, and data systems, and the infrastructure to ship them.
             </p>
             <p className="home-pro-lead">
-              I build production-grade pipelines, APIs, automation, and full-stack products with
-              clear proof: validated data, shipped systems, measured speedups, and model lift.
+              Open to Summer 2027 internship and co-op roles in software, backend, data, or ML
+              engineering.
             </p>
             <div className="hero-proof-chips" aria-label="Proof points">
-              <span>500K+ records/run</span>
-              <span>3 production systems</span>
-              <span>66.8% ML accuracy</span>
-              <span>1,000+ QA outputs</span>
+              <span>2 live AI products</span>
+              <span>Terraform on AWS</span>
+              <span>59x faster pitch analysis</span>
+              <span>11K-line C++ simulation</span>
             </div>
             <div className="home-pro-actions">
               <Link className="btn btn-primary" to="/projects">
@@ -62,7 +61,7 @@ export default function HomePage() {
             </div>
           </Reveal>
 
-          <Reveal className="home-pro-visual" delay={140}>
+          <Reveal className="home-pro-visual" eager>
             <div className="home-pro-scene">
               <div className="home-pro-layer home-pro-layer-back" />
               <div className="home-pro-layer home-pro-layer-mid" />
@@ -75,12 +74,12 @@ export default function HomePage() {
                 alt="Data product dashboard visualization"
               />
               <article className="home-pro-float-card top">
-                <h3>Production Delivery</h3>
-                <p>Shipped full-stack products end-to-end with measurable impact.</p>
+                <h3>Live Products</h3>
+                <p>GapCheck and SurSadhana AI are deployed and public.</p>
               </article>
               <article className="home-pro-float-card bottom">
-                <h3>Pipeline Scale</h3>
-                <p>Automated ETL workflows processing 500K+ records per monthly cycle.</p>
+                <h3>Infrastructure as Code</h3>
+                <p>ECS Fargate, RDS, and ALB in Terraform, with security scans in CI.</p>
               </article>
               <div className="home-pro-code-panel" aria-hidden="true">
                 <span>pipeline.run()</span>
@@ -110,13 +109,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      <PinnedProjectStory projects={projects} />
+      <PinnedProjectStory projects={featuredProjects} />
 
       <section className="section home-pro-focus">
         <div className="container home-pro-focus-grid">
           <Reveal className="home-pro-highlights">
-            <p className="eyebrow">How I Work</p>
-            <h2>Reliable execution, clear communication, and measurable delivery.</h2>
+            <p className="eyebrow">About</p>
+            <h2>Fourth-year software engineering student at the University of Calgary.</h2>
+            <p className="home-pro-about">
+              I like owning a system end to end: designing the schema and API, building the UI,
+              writing the Terraform, and adding the tests that prove it works. My projects span
+              AI job matching, audio ML, sports prediction, simulation, and data pipelines. Outside
+              of code, I co-lead the Sikh Student Association at UCalgary.
+            </p>
             <ul>
               {recruiterHighlights.map((item) => (
                 <li key={item.title}>
@@ -129,7 +134,7 @@ export default function HomePage() {
 
           <Reveal className="home-pro-skills" delay={120}>
             <p className="eyebrow">Technical Stack</p>
-            <h2>Cross-stack capability map.</h2>
+            <h2>Tools I use.</h2>
             <SkillsConstellation groups={skillGroups} />
           </Reveal>
         </div>
@@ -139,10 +144,9 @@ export default function HomePage() {
         <div className="container">
           <Reveal className="home-pro-cta-card">
             <p className="eyebrow">Open to Opportunities</p>
-            <h2>Looking for Summer 2026 co-op roles.</h2>
+            <h2>Open to Summer 2027 internship and co-op roles.</h2>
             <p>
-              If your team is building data-heavy or product-focused systems, I would love to
-              contribute.
+              If your team is building data-heavy or AI-powered products, I'd love to talk.
             </p>
             <div className="home-pro-actions">
               <Link className="btn btn-primary" to="/contact">

@@ -15,7 +15,11 @@ const projectAccents = {
   gapcheck: "#1ec8a5",
   "alberta-energy-data-pipeline": "#ff9f5a",
   "macro-finder": "#82d67f",
-  "premier-league-predictor": "#6fb3ff"
+  "premier-league-predictor": "#6fb3ff",
+  "sursadhana-ai": "#ffb347",
+  "grid-reliability-analytics": "#ffd166",
+  "ai-code-reviewer": "#b18cff",
+  "underdog-manager": "#ff6b5a"
 };
 
 export default function PinnedProjectStory({ projects }) {
@@ -33,7 +37,7 @@ export default function PinnedProjectStory({ projects }) {
     const trigger = ScrollTrigger.create({
       trigger: sectionRef.current,
       start: "top top",
-      end: `+=${projects.length * 680}`,
+      end: `+=${projects.length * 420}`,
       pin: ".pinned-story-stage",
       scrub: 0.65,
       snap: {
@@ -70,11 +74,11 @@ export default function PinnedProjectStory({ projects }) {
         <div className="container pinned-story-grid">
           <div className="pinned-revolve-track">
             <div className="pinned-story-copy">
-              <p className="eyebrow">Core Signal</p>
-              <h2 id="pinned-story-title">Production systems, not toy projects.</h2>
+              <p className="eyebrow">Selected Work</p>
+              <h2 id="pinned-story-title">Featured projects.</h2>
               <p>
-                Scroll through the work as a systems map: ingestion, APIs, validation, model
-                signals, product UX, and measured outcomes.
+                Each one has a full case study: the problem, the architecture, the tradeoffs, and
+                the results.
               </p>
               <div className="pinned-story-progress" aria-hidden="true">
                 {projects.map((project, index) => (
@@ -115,12 +119,12 @@ export default function PinnedProjectStory({ projects }) {
                     <ExternalLink size={16} aria-hidden="true" />
                     Live Demo
                   </a>
-                ) : (
+                ) : activeProject.repoUrl ? (
                   <a className="btn btn-secondary" href={activeProject.repoUrl} target="_blank" rel="noreferrer">
                     <Code2 size={16} aria-hidden="true" />
                     Repository
                   </a>
-                )}
+                ) : null}
               </div>
             </article>
           </div>

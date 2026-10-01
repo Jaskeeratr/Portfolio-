@@ -1487,21 +1487,10 @@ h2 {
   border-color: rgba(125, 215, 240, 0.56);
 }
 
+/* Reveal animation is driven by Framer Motion (Reveal.jsx). A CSS transition on the
+   same properties re-eases every inline frame and makes the reveal lag behind. */
 .reveal {
-  opacity: 0;
-  transform: translateY(24px) scale(0.99);
-  filter: blur(4px);
-  transition:
-    opacity 0.66s ease,
-    transform 0.66s cubic-bezier(0.2, 0.8, 0.2, 1),
-    filter 0.66s ease;
-  transition-delay: var(--reveal-delay, 0ms);
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-  filter: blur(0);
+  will-change: opacity, transform;
 }
 
 @media (max-width: 1050px) {
@@ -2545,6 +2534,11 @@ body::after {
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
 }
 
+.home-pro-about {
+  margin: 0.7rem 0 0;
+  line-height: 1.65;
+}
+
 .home-pro-highlights ul {
   margin: 1rem 0 0;
   padding: 0;
@@ -3448,34 +3442,6 @@ body::after {
   transform:
     translate3d(calc((var(--project-story-scroll) - 0.5) * 24px), calc((1 - var(--project-story-scroll)) * 18px), 0)
     scaleX(calc(0.42 + (var(--project-story-scroll) * 0.58)));
-}
-
-.home-pro-project-grid > .reveal,
-.projects-grid > .reveal {
-  perspective: 1200px;
-}
-
-.home-pro-project-grid > .reveal:nth-child(1) .home-pro-project-card,
-.projects-grid > .reveal:nth-child(1) .project-card {
-  --scroll-shift-y: calc((1 - var(--project-story-scroll)) * 24px);
-  --scroll-rotate: calc((1 - var(--project-story-scroll)) * -1.6deg);
-}
-
-.home-pro-project-grid > .reveal:nth-child(2) .home-pro-project-card,
-.projects-grid > .reveal:nth-child(2) .project-card {
-  --scroll-shift-y: calc((1 - var(--project-story-scroll)) * 44px);
-  --scroll-rotate: calc((1 - var(--project-story-scroll)) * 1.2deg);
-}
-
-.home-pro-project-grid > .reveal:nth-child(3) .home-pro-project-card,
-.projects-grid > .reveal:nth-child(3) .project-card {
-  --scroll-shift-y: calc((1 - var(--project-story-scroll)) * 64px);
-  --scroll-rotate: calc((1 - var(--project-story-scroll)) * -0.9deg);
-}
-
-.projects-grid > .reveal:nth-child(4) .project-card {
-  --scroll-shift-y: calc((1 - var(--project-story-scroll)) * 54px);
-  --scroll-rotate: calc((1 - var(--project-story-scroll)) * 1.4deg);
 }
 
 .project-visual-glare {

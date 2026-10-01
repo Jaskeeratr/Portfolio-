@@ -1,4 +1,4 @@
-import { BriefcaseBusiness, Users } from "lucide-react";
+import { BriefcaseBusiness, GraduationCap, Users } from "lucide-react";
 import Reveal from "../components/Reveal";
 import { experiences, skillGroups } from "../data/siteContent";
 
@@ -6,10 +6,10 @@ export default function ExperiencePage() {
   return (
     <section className="section page-shell experience-page">
       <div className="container">
-        <Reveal className="section-head page-head">
+        <Reveal className="section-head page-head" eager>
           <p className="eyebrow">Experience</p>
           <h1>Professional Experience and Leadership</h1>
-          <p>Delivery-focused roles across full-stack development and AI quality systems.</p>
+          <p>Full-stack development and AI evaluation work, plus education and leadership.</p>
         </Reveal>
 
         <div className="timeline">
@@ -41,14 +41,31 @@ export default function ExperiencePage() {
         </div>
 
         <Reveal className="leadership-card section-card-gap">
+          <p className="eyebrow">Education</p>
+          <h2>
+            <GraduationCap size={22} aria-hidden="true" />
+            B.Sc. Software Engineering | University of Calgary
+          </h2>
+          <p>
+            Schulich School of Engineering, 4th year. Expected graduation: May 2028.
+          </p>
+          <p>
+            Coursework: Data Structures and Algorithms, Software Architecture, Databases,
+            Object-Oriented Programming, Operating Systems, Probability and Statistics.
+          </p>
+        </Reveal>
+
+        <Reveal className="leadership-card section-card-gap">
           <p className="eyebrow">Leadership</p>
           <h2>
             <Users size={22} aria-hidden="true" />
             Co-President | Sikh Student Association, University of Calgary
           </h2>
           <p>
-            Leading a 100+ member organization and coordinating executive teams to run 10+
-            cultural and community events annually.
+            Lead a 100+ member student organization across cross-functional executive teams,
+            running 10+ events a year with budget, timeline, and stakeholder ownership.
+            Coordinate between student executives, university administration, and community
+            partners.
           </p>
         </Reveal>
 

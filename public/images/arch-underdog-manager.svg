@@ -5,8 +5,8 @@
       <stop offset="1" stop-color="#081B2B"/>
     </linearGradient>
     <linearGradient id="line" x1="164" y1="290" x2="1036" y2="290" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#6FB3FF"/>
-      <stop offset="1" stop-color="#7AF35E"/>
+      <stop stop-color="#FF6B5A"/>
+      <stop offset="1" stop-color="#FFD166"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="620" rx="28" fill="url(#g)"/>
@@ -21,11 +21,11 @@
   <path d="M735 210V252" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
   <path d="M1005 210V252" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
   <path d="M600 394V430" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
-  <text x="195" y="158" fill="#D8ECFA" font-family="Manrope, Segoe UI, Arial" font-size="22" font-weight="700" text-anchor="middle">Live Feeds</text>
-  <text x="465" y="158" fill="#D8ECFA" font-family="Manrope, Segoe UI, Arial" font-size="22" font-weight="700" text-anchor="middle">Features</text>
-  <text x="735" y="158" fill="#D8ECFA" font-family="Manrope, Segoe UI, Arial" font-size="19" font-weight="700" text-anchor="middle">Adaptive Training</text>
-  <text x="1005" y="158" fill="#D8ECFA" font-family="Manrope, Segoe UI, Arial" font-size="22" font-weight="700" text-anchor="middle">Calibration</text>
-  <text x="600" y="332" fill="#BADBED" font-family="Manrope, Segoe UI, Arial" font-size="26" font-weight="700" text-anchor="middle">Flask API + scikit-learn Models + SQLite History</text>
-  <text x="600" y="494" fill="#BADBED" font-family="Manrope, Segoe UI, Arial" font-size="24" font-weight="700" text-anchor="middle">Dashboard: Predictions + What-If</text>
-  <text x="78" y="52" fill="#CFE6F7" font-family="Sora, Segoe UI, Arial" font-size="30" font-weight="700">Multi-Sport Predictor Architecture</text>
+  <text x="195" y="158" fill="#D8ECFA" font-family="Manrope, Segoe UI, Arial" font-size="22" font-weight="700" text-anchor="middle">Seeded RNG</text>
+  <text x="465" y="158" fill="#D8ECFA" font-family="Manrope, Segoe UI, Arial" font-size="19" font-weight="700" text-anchor="middle">League + Schedule</text>
+  <text x="735" y="158" fill="#D8ECFA" font-family="Manrope, Segoe UI, Arial" font-size="22" font-weight="700" text-anchor="middle">Match Engine</text>
+  <text x="1005" y="158" fill="#D8ECFA" font-family="Manrope, Segoe UI, Arial" font-size="22" font-weight="700" text-anchor="middle">Save Schema v9</text>
+  <text x="600" y="332" fill="#BADBED" font-family="Manrope, Segoe UI, Arial" font-size="26" font-weight="700" text-anchor="middle">Game Instance: Season Loop, Trades, Staff, Finances</text>
+  <text x="600" y="494" fill="#BADBED" font-family="Manrope, Segoe UI, Arial" font-size="24" font-weight="700" text-anchor="middle">UMG Screens + 2D Court Viewer</text>
+  <text x="78" y="52" fill="#CFE6F7" font-family="Sora, Segoe UI, Arial" font-size="30" font-weight="700">Underdog Manager Architecture</text>
 </svg>

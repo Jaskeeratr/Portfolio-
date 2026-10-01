@@ -1,7 +1,9 @@
 import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
 
-export default function Reveal({ className = "", children, delay = 0, style = {} }) {
+// `eager` renders content visible immediately (for above-the-fold sections), so the first
+// screen never waits on an animation frame.
+export default function Reveal({ className = "", children, delay = 0, style = {}, eager = false }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, amount: 0.16 });
   const reducedMotion = useReducedMotion();
@@ -10,9 +12,9 @@ export default function Reveal({ className = "", children, delay = 0, style = {}
     <motion.div
       ref={ref}
       className={`reveal ${inView ? "visible" : ""} ${className}`.trim()}
-      initial={reducedMotion ? false : { opacity: 0, y: 22, filter: "blur(6px)" }}
+      initial={reducedMotion || eager ? false : { opacity: 0, y: 22, filter: "blur(6px)" }}
       animate={
-        reducedMotion || inView
+        reducedMotion || eager || inView
           ? { opacity: 1, y: 0, filter: "blur(0px)" }
           : { opacity: 0, y: 22, filter: "blur(6px)" }
       }

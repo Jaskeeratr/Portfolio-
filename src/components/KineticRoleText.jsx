@@ -2,10 +2,10 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const roles = [
-  "data-heavy full-stack products",
-  "production data pipelines",
-  "backend APIs and automation",
-  "ML prediction systems"
+  "AI-powered products",
+  "data pipelines",
+  "backend APIs and infrastructure",
+  "ML and audio systems"
 ];
 
 export default function KineticRoleText() {

@@ -72,12 +72,12 @@ export default function ContactPage() {
   return (
     <section className="section page-shell">
       <div className="container narrow">
-        <Reveal className="section-head page-head">
+        <Reveal className="section-head page-head" eager>
           <p className="eyebrow">Contact</p>
-          <h1>Let us build something impactful.</h1>
+          <h1>Get in touch.</h1>
           <p>
-            I am actively seeking Summer 2026 co-op opportunities in software engineering, data
-            engineering, and analytics.
+            I am open to Summer 2027 internship and co-op opportunities in software engineering, data
+            engineering, ML, and analytics.
           </p>
         </Reveal>
 

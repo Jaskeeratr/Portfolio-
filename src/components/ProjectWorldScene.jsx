@@ -6,7 +6,11 @@ const worldThemes = {
   gapcheck: { primary: "#1ec8a5", secondary: "#55d2ff", shape: "resume" },
   "premier-league-predictor": { primary: "#6fb3ff", secondary: "#7af35e", shape: "scoreboard" },
   "alberta-energy-data-pipeline": { primary: "#ff9f5a", secondary: "#ffd166", shape: "pipeline" },
-  "macro-finder": { primary: "#82d67f", secondary: "#ffd166", shape: "nutrition" }
+  "macro-finder": { primary: "#82d67f", secondary: "#ffd166", shape: "nutrition" },
+  "sursadhana-ai": { primary: "#ffb347", secondary: "#ff6fae", shape: "audio" },
+  "grid-reliability-analytics": { primary: "#ffd166", secondary: "#55d2ff", shape: "pipeline" },
+  "ai-code-reviewer": { primary: "#b18cff", secondary: "#55d2ff", shape: "agent" },
+  "underdog-manager": { primary: "#ff6b5a", secondary: "#ffd166", shape: "court" }
 };
 
 function EllipseLine({ radius = 1.2, color = "#55d2ff", rotation = [0, 0, 0], speed = 0.16 }) {

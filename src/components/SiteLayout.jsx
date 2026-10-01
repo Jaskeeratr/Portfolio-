@@ -1,6 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
 import AmbientBackdrop from "./AmbientBackdrop";
-import CustomCursor from "./CustomCursor";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import ScrollChoreography from "./ScrollChoreography";
@@ -13,7 +12,6 @@ export default function SiteLayout() {
   return (
     <>
       <AmbientBackdrop />
-      <CustomCursor />
       <SmoothScroll />
       <ScrollProgress />
       <ScrollChoreography />

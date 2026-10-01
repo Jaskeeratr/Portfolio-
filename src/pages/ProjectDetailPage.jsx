@@ -28,6 +28,30 @@ const projectThemes = {
     accent: "#6fb3ff",
     glow: "rgba(111, 179, 255, 0.32)",
     gradient: "linear-gradient(130deg, rgba(26, 41, 72, 0.9), rgba(25, 27, 48, 0.84))"
+  },
+  "sursadhana-ai": {
+    kicker: "Audio ML Product",
+    accent: "#ffb347",
+    glow: "rgba(255, 179, 71, 0.34)",
+    gradient: "linear-gradient(130deg, rgba(64, 40, 20, 0.9), rgba(30, 22, 44, 0.84))"
+  },
+  "grid-reliability-analytics": {
+    kicker: "Analytics Engineering",
+    accent: "#ffd166",
+    glow: "rgba(255, 209, 102, 0.32)",
+    gradient: "linear-gradient(130deg, rgba(60, 52, 20, 0.9), rgba(16, 30, 46, 0.84))"
+  },
+  "ai-code-reviewer": {
+    kicker: "Agentic AI System",
+    accent: "#b18cff",
+    glow: "rgba(177, 140, 255, 0.32)",
+    gradient: "linear-gradient(130deg, rgba(42, 30, 72, 0.9), rgba(14, 28, 46, 0.84))"
+  },
+  "underdog-manager": {
+    kicker: "C++ Game Systems",
+    accent: "#ff6b5a",
+    glow: "rgba(255, 107, 90, 0.32)",
+    gradient: "linear-gradient(130deg, rgba(66, 28, 26, 0.9), rgba(20, 26, 44, 0.84))"
   }
 };
 
@@ -69,7 +93,7 @@ export default function ProjectDetailPage() {
           "--project-gradient": theme.gradient
         }}
       >
-        <Reveal className="project-story-hero" delay={50}>
+        <Reveal className="project-story-hero" eager>
           <div className="project-story-copy">
             <p className="eyebrow">Project Deep Dive | {theme.kicker}</p>
             <h1>{project.name}</h1>
@@ -85,16 +109,18 @@ export default function ProjectDetailPage() {
                   <ExternalLink size={16} aria-hidden="true" />
                   Live Demo
                 </a>
-              ) : (
-                <span className="repo-coming-soon">Demo not public; repository and case study available</span>
-              )}
+              ) : project.repoUrl ? (
+                <span className="repo-coming-soon">
+                  {project.caseStudyPdf ? "Demo not public; repository and case study available" : "No hosted demo; see repository"}
+                </span>
+              ) : null}
               {project.repoUrl ? (
                 <a className="btn btn-secondary" href={project.repoUrl} target="_blank" rel="noreferrer">
                   <Code2 size={16} aria-hidden="true" />
                   View Repository
                 </a>
               ) : (
-                <span className="repo-coming-soon">Repository link will be added soon</span>
+                <span className="repo-coming-soon">{project.status ?? "Repository link will be added soon"}</span>
               )}
               {project.caseStudyPdf ? (
                 <a className="btn btn-secondary" href={project.caseStudyPdf} target="_blank" rel="noreferrer">
@@ -120,9 +146,8 @@ export default function ProjectDetailPage() {
         </Reveal>
 
         <Reveal className="section-head page-head" delay={120}>
-          <p className="eyebrow">Project Narrative</p>
-          <h2>Built for measurable outcomes, not vanity features.</h2>
-          <p>{project.summary}</p>
+          <p className="eyebrow">Results</p>
+          <h2>What it delivered</h2>
         </Reveal>
 
         <Reveal className="results-snapshot" delay={180}>

@@ -6,7 +6,7 @@ export default function ProjectsPage() {
   return (
     <section className="section page-shell projects-story-page">
       <div className="container">
-        <Reveal className="section-head page-head">
+        <Reveal className="section-head page-head" eager>
           <p className="eyebrow">Projects</p>
           <h1>Project Portfolio</h1>
           <p>

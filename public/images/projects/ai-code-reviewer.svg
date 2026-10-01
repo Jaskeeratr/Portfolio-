@@ -1,0 +1,37 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="42" fill="#0a0d1c"/>
+  <circle cx="320" cy="220" r="300" fill="#b18cff" opacity="0.14"/>
+  <circle cx="940" cy="540" r="330" fill="#55d2ff" opacity="0.13"/>
+  <g transform="translate(110 130)">
+    <rect width="600" height="490" rx="30" fill="#11152a" stroke="#b18cff" stroke-opacity="0.34"/>
+    <rect x="30" y="30" width="200" height="12" rx="6" fill="#e6dcff" opacity="0.55"/>
+    <g font-family="Consolas, Menlo, monospace" font-size="19">
+      <rect x="30" y="74" width="540" height="34" fill="#ff6b5a" opacity="0.12"/><text x="44" y="98" fill="#ff8b7d">- if signature == expected:</text>
+      <rect x="30" y="112" width="540" height="34" fill="#7af35e" opacity="0.12"/><text x="44" y="136" fill="#9bf08a">+ if hmac.compare_digest(sig, expected):</text>
+      <text x="44" y="176" fill="#8a93b8">      return verify_payload(body)</text>
+      <rect x="30" y="196" width="540" height="34" fill="#7af35e" opacity="0.12"/><text x="44" y="220" fill="#9bf08a">+ chunks = index.diff_since(sha)</text>
+    </g>
+    <g transform="translate(30 254)">
+      <rect width="540" height="200" rx="20" fill="#1a1f3a" stroke="#b18cff" stroke-opacity="0.5"/>
+      <circle cx="40" cy="42" r="18" fill="#b18cff"/>
+      <path d="M32 42 L38 48 L49 36" stroke="#11152a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="72" y="30" width="150" height="12" rx="6" fill="#e6dcff" opacity="0.8"/>
+      <rect x="236" y="28" width="76" height="18" rx="9" fill="#ffd166" opacity="0.8"/>
+      <rect x="28" y="84" width="470" height="10" rx="5" fill="#e6dcff" opacity="0.4"/>
+      <rect x="28" y="108" width="420" height="10" rx="5" fill="#e6dcff" opacity="0.4"/>
+      <rect x="28" y="132" width="300" height="10" rx="5" fill="#e6dcff" opacity="0.4"/>
+      <rect x="28" y="160" width="120" height="22" rx="11" fill="#55d2ff" opacity="0.25"/>
+    </g>
+  </g>
+  <g transform="translate(760 130)">
+    <rect width="330" height="490" rx="30" fill="#11152a" stroke="#55d2ff" stroke-opacity="0.3"/>
+    <text x="30" y="54" fill="#f2efff" font-family="Inter, Arial" font-size="22" font-weight="700">RAG index</text>
+    <g stroke="#55d2ff" stroke-opacity="0.5" stroke-width="2">
+      <path d="M90 150 L170 210"/><path d="M170 210 L250 140"/><path d="M170 210 L120 300"/><path d="M170 210 L240 290"/><path d="M120 300 L170 380"/><path d="M240 290 L170 380"/><path d="M240 290 L280 410"/>
+    </g>
+    <circle cx="90" cy="150" r="14" fill="#55d2ff"/><circle cx="250" cy="140" r="14" fill="#55d2ff"/><circle cx="170" cy="210" r="22" fill="#b18cff"/><circle cx="120" cy="300" r="14" fill="#55d2ff"/><circle cx="240" cy="290" r="14" fill="#7af35e"/><circle cx="170" cy="380" r="14" fill="#55d2ff"/><circle cx="280" cy="410" r="12" fill="#55d2ff" opacity="0.6"/>
+    <text x="30" y="456" fill="#9aa3c8" font-family="Inter, Arial" font-size="17">pgvector + full-text + RRF</text>
+  </g>
+  <text x="110" y="92" fill="#f2efff" font-family="Inter, Arial" font-size="42" font-weight="800">AI Code Reviewer</text>
+  <text x="110" y="690" fill="#b4b8d8" font-family="Inter, Arial" font-size="24">PR diff + agentic tool-use loop + retrieval over the whole codebase</text>
+</svg>
